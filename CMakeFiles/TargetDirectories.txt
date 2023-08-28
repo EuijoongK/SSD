@@ -1,0 +1,3 @@
+/mnt/c/Users/MICS/Desktop/Mobilenet/CMakeFiles/test.dir
+/mnt/c/Users/MICS/Desktop/Mobilenet/CMakeFiles/edit_cache.dir
+/mnt/c/Users/MICS/Desktop/Mobilenet/CMakeFiles/rebuild_cache.dir
