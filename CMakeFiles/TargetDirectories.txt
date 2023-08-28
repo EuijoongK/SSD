@@ -1,3 +1,5 @@
+/mnt/c/Users/MICS/Desktop/Mobilenet/CMakeFiles/layer.dir
+/mnt/c/Users/MICS/Desktop/Mobilenet/CMakeFiles/network.dir
 /mnt/c/Users/MICS/Desktop/Mobilenet/CMakeFiles/test.dir
 /mnt/c/Users/MICS/Desktop/Mobilenet/CMakeFiles/edit_cache.dir
 /mnt/c/Users/MICS/Desktop/Mobilenet/CMakeFiles/rebuild_cache.dir

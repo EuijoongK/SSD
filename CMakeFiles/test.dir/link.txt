@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/test.dir/src/test.cpp.o -o test   -L/mnt/c/Users/MICS/Desktop/Mobilenet/build/lib  -Wl,-rpath,/mnt/c/Users/MICS/Desktop/Mobilenet/build/lib -lnetwork -llayer 
+/usr/bin/c++  -fno-elide-constructors CMakeFiles/test.dir/src/test.cpp.o -o test  liblayer.a libnetwork.a 

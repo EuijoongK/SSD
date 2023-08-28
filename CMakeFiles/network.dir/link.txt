@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnetwork.a CMakeFiles/network.dir/src/core/core.cpp.o CMakeFiles/network.dir/src/layer/zeropadding.cpp.o CMakeFiles/network.dir/src/layer/maxpooling.cpp.o CMakeFiles/network.dir/src/layer/convolution.cpp.o CMakeFiles/network.dir/src/layer/relu.cpp.o CMakeFiles/network.dir/src/layer/fc.cpp.o CMakeFiles/network.dir/src/layer/softmax.cpp.o CMakeFiles/network.dir/src/network/model.cpp.o CMakeFiles/network.dir/src/datahandler/datahandler.cpp.o
+/usr/bin/ranlib libnetwork.a

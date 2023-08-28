@@ -117,6 +117,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named layer
+
+# Build rule for target.
+layer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 layer
+.PHONY : layer
+
+# fast build rule for target.
+layer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/build
+.PHONY : layer/fast
+
+#=============================================================================
+# Target rules for targets named network
+
+# Build rule for target.
+network: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 network
+.PHONY : network
+
+# fast build rule for target.
+network/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/build
+.PHONY : network/fast
+
+#=============================================================================
 # Target rules for targets named test
 
 # Build rule for target.
@@ -128,6 +154,249 @@ test: cmake_check_build_system
 test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
+
+src/core/core.o: src/core/core.cpp.o
+.PHONY : src/core/core.o
+
+# target to build an object file
+src/core/core.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/core/core.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/core/core.cpp.o
+.PHONY : src/core/core.cpp.o
+
+src/core/core.i: src/core/core.cpp.i
+.PHONY : src/core/core.i
+
+# target to preprocess a source file
+src/core/core.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/core/core.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/core/core.cpp.i
+.PHONY : src/core/core.cpp.i
+
+src/core/core.s: src/core/core.cpp.s
+.PHONY : src/core/core.s
+
+# target to generate assembly for a file
+src/core/core.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/core/core.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/core/core.cpp.s
+.PHONY : src/core/core.cpp.s
+
+src/datahandler/datahandler.o: src/datahandler/datahandler.cpp.o
+.PHONY : src/datahandler/datahandler.o
+
+# target to build an object file
+src/datahandler/datahandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/datahandler/datahandler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/datahandler/datahandler.cpp.o
+.PHONY : src/datahandler/datahandler.cpp.o
+
+src/datahandler/datahandler.i: src/datahandler/datahandler.cpp.i
+.PHONY : src/datahandler/datahandler.i
+
+# target to preprocess a source file
+src/datahandler/datahandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/datahandler/datahandler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/datahandler/datahandler.cpp.i
+.PHONY : src/datahandler/datahandler.cpp.i
+
+src/datahandler/datahandler.s: src/datahandler/datahandler.cpp.s
+.PHONY : src/datahandler/datahandler.s
+
+# target to generate assembly for a file
+src/datahandler/datahandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/datahandler/datahandler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/datahandler/datahandler.cpp.s
+.PHONY : src/datahandler/datahandler.cpp.s
+
+src/layer/convolution.o: src/layer/convolution.cpp.o
+.PHONY : src/layer/convolution.o
+
+# target to build an object file
+src/layer/convolution.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/layer/convolution.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/layer/convolution.cpp.o
+.PHONY : src/layer/convolution.cpp.o
+
+src/layer/convolution.i: src/layer/convolution.cpp.i
+.PHONY : src/layer/convolution.i
+
+# target to preprocess a source file
+src/layer/convolution.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/layer/convolution.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/layer/convolution.cpp.i
+.PHONY : src/layer/convolution.cpp.i
+
+src/layer/convolution.s: src/layer/convolution.cpp.s
+.PHONY : src/layer/convolution.s
+
+# target to generate assembly for a file
+src/layer/convolution.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/layer/convolution.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/layer/convolution.cpp.s
+.PHONY : src/layer/convolution.cpp.s
+
+src/layer/fc.o: src/layer/fc.cpp.o
+.PHONY : src/layer/fc.o
+
+# target to build an object file
+src/layer/fc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/layer/fc.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/layer/fc.cpp.o
+.PHONY : src/layer/fc.cpp.o
+
+src/layer/fc.i: src/layer/fc.cpp.i
+.PHONY : src/layer/fc.i
+
+# target to preprocess a source file
+src/layer/fc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/layer/fc.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/layer/fc.cpp.i
+.PHONY : src/layer/fc.cpp.i
+
+src/layer/fc.s: src/layer/fc.cpp.s
+.PHONY : src/layer/fc.s
+
+# target to generate assembly for a file
+src/layer/fc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/layer/fc.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/layer/fc.cpp.s
+.PHONY : src/layer/fc.cpp.s
+
+src/layer/maxpooling.o: src/layer/maxpooling.cpp.o
+.PHONY : src/layer/maxpooling.o
+
+# target to build an object file
+src/layer/maxpooling.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/layer/maxpooling.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/layer/maxpooling.cpp.o
+.PHONY : src/layer/maxpooling.cpp.o
+
+src/layer/maxpooling.i: src/layer/maxpooling.cpp.i
+.PHONY : src/layer/maxpooling.i
+
+# target to preprocess a source file
+src/layer/maxpooling.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/layer/maxpooling.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/layer/maxpooling.cpp.i
+.PHONY : src/layer/maxpooling.cpp.i
+
+src/layer/maxpooling.s: src/layer/maxpooling.cpp.s
+.PHONY : src/layer/maxpooling.s
+
+# target to generate assembly for a file
+src/layer/maxpooling.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/layer/maxpooling.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/layer/maxpooling.cpp.s
+.PHONY : src/layer/maxpooling.cpp.s
+
+src/layer/relu.o: src/layer/relu.cpp.o
+.PHONY : src/layer/relu.o
+
+# target to build an object file
+src/layer/relu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/layer/relu.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/layer/relu.cpp.o
+.PHONY : src/layer/relu.cpp.o
+
+src/layer/relu.i: src/layer/relu.cpp.i
+.PHONY : src/layer/relu.i
+
+# target to preprocess a source file
+src/layer/relu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/layer/relu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/layer/relu.cpp.i
+.PHONY : src/layer/relu.cpp.i
+
+src/layer/relu.s: src/layer/relu.cpp.s
+.PHONY : src/layer/relu.s
+
+# target to generate assembly for a file
+src/layer/relu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/layer/relu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/layer/relu.cpp.s
+.PHONY : src/layer/relu.cpp.s
+
+src/layer/softmax.o: src/layer/softmax.cpp.o
+.PHONY : src/layer/softmax.o
+
+# target to build an object file
+src/layer/softmax.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/layer/softmax.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/layer/softmax.cpp.o
+.PHONY : src/layer/softmax.cpp.o
+
+src/layer/softmax.i: src/layer/softmax.cpp.i
+.PHONY : src/layer/softmax.i
+
+# target to preprocess a source file
+src/layer/softmax.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/layer/softmax.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/layer/softmax.cpp.i
+.PHONY : src/layer/softmax.cpp.i
+
+src/layer/softmax.s: src/layer/softmax.cpp.s
+.PHONY : src/layer/softmax.s
+
+# target to generate assembly for a file
+src/layer/softmax.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/layer/softmax.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/layer/softmax.cpp.s
+.PHONY : src/layer/softmax.cpp.s
+
+src/layer/zeropadding.o: src/layer/zeropadding.cpp.o
+.PHONY : src/layer/zeropadding.o
+
+# target to build an object file
+src/layer/zeropadding.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/layer/zeropadding.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/layer/zeropadding.cpp.o
+.PHONY : src/layer/zeropadding.cpp.o
+
+src/layer/zeropadding.i: src/layer/zeropadding.cpp.i
+.PHONY : src/layer/zeropadding.i
+
+# target to preprocess a source file
+src/layer/zeropadding.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/layer/zeropadding.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/layer/zeropadding.cpp.i
+.PHONY : src/layer/zeropadding.cpp.i
+
+src/layer/zeropadding.s: src/layer/zeropadding.cpp.s
+.PHONY : src/layer/zeropadding.s
+
+# target to generate assembly for a file
+src/layer/zeropadding.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/layer/zeropadding.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/layer/zeropadding.cpp.s
+.PHONY : src/layer/zeropadding.cpp.s
+
+src/network/model.o: src/network/model.cpp.o
+.PHONY : src/network/model.o
+
+# target to build an object file
+src/network/model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/network/model.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/network/model.cpp.o
+.PHONY : src/network/model.cpp.o
+
+src/network/model.i: src/network/model.cpp.i
+.PHONY : src/network/model.i
+
+# target to preprocess a source file
+src/network/model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/network/model.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/network/model.cpp.i
+.PHONY : src/network/model.cpp.i
+
+src/network/model.s: src/network/model.cpp.s
+.PHONY : src/network/model.s
+
+# target to generate assembly for a file
+src/network/model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/network/model.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/network/model.cpp.s
+.PHONY : src/network/model.cpp.s
 
 src/test.o: src/test.cpp.o
 .PHONY : src/test.o
@@ -161,7 +430,36 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... layer"
+	@echo "... network"
 	@echo "... test"
+	@echo "... src/core/core.o"
+	@echo "... src/core/core.i"
+	@echo "... src/core/core.s"
+	@echo "... src/datahandler/datahandler.o"
+	@echo "... src/datahandler/datahandler.i"
+	@echo "... src/datahandler/datahandler.s"
+	@echo "... src/layer/convolution.o"
+	@echo "... src/layer/convolution.i"
+	@echo "... src/layer/convolution.s"
+	@echo "... src/layer/fc.o"
+	@echo "... src/layer/fc.i"
+	@echo "... src/layer/fc.s"
+	@echo "... src/layer/maxpooling.o"
+	@echo "... src/layer/maxpooling.i"
+	@echo "... src/layer/maxpooling.s"
+	@echo "... src/layer/relu.o"
+	@echo "... src/layer/relu.i"
+	@echo "... src/layer/relu.s"
+	@echo "... src/layer/softmax.o"
+	@echo "... src/layer/softmax.i"
+	@echo "... src/layer/softmax.s"
+	@echo "... src/layer/zeropadding.o"
+	@echo "... src/layer/zeropadding.i"
+	@echo "... src/layer/zeropadding.s"
+	@echo "... src/network/model.o"
+	@echo "... src/network/model.i"
+	@echo "... src/network/model.s"
 	@echo "... src/test.o"
 	@echo "... src/test.i"
 	@echo "... src/test.s"
