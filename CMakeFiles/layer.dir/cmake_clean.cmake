@@ -17,8 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/layer.dir/src/layer/zeropadding.cpp.o.d"
   "CMakeFiles/layer.dir/src/network/model.cpp.o"
   "CMakeFiles/layer.dir/src/network/model.cpp.o.d"
-  "liblayer.a"
-  "liblayer.pdb"
+  "build/lib/liblayer.a"
+  "build/lib/liblayer.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

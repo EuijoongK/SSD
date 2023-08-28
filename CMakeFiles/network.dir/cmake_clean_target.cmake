@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libnetwork.a"
+  "build/lib/libnetwork.a"
 )

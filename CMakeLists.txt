@@ -29,7 +29,9 @@ include_directories(include)
 
 # 정적 라이브러리 빌드
 add_library(layer STATIC ${LIB_SRC})
+set_target_properties(layer PROPERTIES ARCHIVE_OUTPUT_DIRECTORY build/lib)
 add_library(network STATIC ${LIB_SRC})
+set_target_properties(network PROPERTIES ARCHIVE_OUTPUT_DIRECTORY build/lib)
 
 # 실행 파일 빌드
 add_executable(test ${SRC_DIR}/test.cpp)

@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "liblayer.a"
+  "build/lib/liblayer.a"
 )
