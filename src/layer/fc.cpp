@@ -5,7 +5,7 @@ void Layer::Fullyconnected(
     const FeatureMap::FeatureMap& input,
     const FeatureMap::Kernel& kernel
 ){
-    uint n_input = input.row;
+
     uint i, j;
 
     for(i = 0; i < kernel.row; ++i){
@@ -13,7 +13,6 @@ void Layer::Fullyconnected(
         for(j =0; j < kernel.col - 1; ++j){
             sum += ((*(input.data + i)) * (*(kernel.data + i * kernel.col + j)));
         }
-        *(output.data + i) = sum;
     }
     for(i = 0; i < kernel.row; ++i){
         *(output.data + i) += *(kernel.data + kernel.col * i + kernel.col - 1);

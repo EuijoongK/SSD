@@ -1,7 +1,7 @@
 #ifndef NETWORK_H
 #define NETWORK_H
 
-#define MAX_LAYER_NUM 5
+#define MAX_LAYER_NUM 10
 
 #define EMPTY 0
 #define CONVOLUTION 1
