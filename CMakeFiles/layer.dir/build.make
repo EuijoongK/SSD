@@ -69,19 +69,19 @@ include CMakeFiles/layer.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/layer.dir/flags.make
 
-CMakeFiles/layer.dir/src/core/core.cpp.o: CMakeFiles/layer.dir/flags.make
-CMakeFiles/layer.dir/src/core/core.cpp.o: src/core/core.cpp
-CMakeFiles/layer.dir/src/core/core.cpp.o: CMakeFiles/layer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/MICS/Desktop/Mobilenet/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/layer.dir/src/core/core.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer.dir/src/core/core.cpp.o -MF CMakeFiles/layer.dir/src/core/core.cpp.o.d -o CMakeFiles/layer.dir/src/core/core.cpp.o -c /mnt/c/Users/MICS/Desktop/Mobilenet/src/core/core.cpp
+CMakeFiles/layer.dir/src/featuremap/featuremap.cpp.o: CMakeFiles/layer.dir/flags.make
+CMakeFiles/layer.dir/src/featuremap/featuremap.cpp.o: src/featuremap/featuremap.cpp
+CMakeFiles/layer.dir/src/featuremap/featuremap.cpp.o: CMakeFiles/layer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/MICS/Desktop/Mobilenet/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/layer.dir/src/featuremap/featuremap.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer.dir/src/featuremap/featuremap.cpp.o -MF CMakeFiles/layer.dir/src/featuremap/featuremap.cpp.o.d -o CMakeFiles/layer.dir/src/featuremap/featuremap.cpp.o -c /mnt/c/Users/MICS/Desktop/Mobilenet/src/featuremap/featuremap.cpp
 
-CMakeFiles/layer.dir/src/core/core.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer.dir/src/core/core.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/MICS/Desktop/Mobilenet/src/core/core.cpp > CMakeFiles/layer.dir/src/core/core.cpp.i
+CMakeFiles/layer.dir/src/featuremap/featuremap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer.dir/src/featuremap/featuremap.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/MICS/Desktop/Mobilenet/src/featuremap/featuremap.cpp > CMakeFiles/layer.dir/src/featuremap/featuremap.cpp.i
 
-CMakeFiles/layer.dir/src/core/core.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer.dir/src/core/core.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/MICS/Desktop/Mobilenet/src/core/core.cpp -o CMakeFiles/layer.dir/src/core/core.cpp.s
+CMakeFiles/layer.dir/src/featuremap/featuremap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer.dir/src/featuremap/featuremap.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/MICS/Desktop/Mobilenet/src/featuremap/featuremap.cpp -o CMakeFiles/layer.dir/src/featuremap/featuremap.cpp.s
 
 CMakeFiles/layer.dir/src/layer/zeropadding.cpp.o: CMakeFiles/layer.dir/flags.make
 CMakeFiles/layer.dir/src/layer/zeropadding.cpp.o: src/layer/zeropadding.cpp
@@ -197,7 +197,7 @@ CMakeFiles/layer.dir/src/datahandler/datahandler.cpp.s: cmake_force
 
 # Object files for target layer
 layer_OBJECTS = \
-"CMakeFiles/layer.dir/src/core/core.cpp.o" \
+"CMakeFiles/layer.dir/src/featuremap/featuremap.cpp.o" \
 "CMakeFiles/layer.dir/src/layer/zeropadding.cpp.o" \
 "CMakeFiles/layer.dir/src/layer/maxpooling.cpp.o" \
 "CMakeFiles/layer.dir/src/layer/convolution.cpp.o" \
@@ -210,7 +210,7 @@ layer_OBJECTS = \
 # External object files for target layer
 layer_EXTERNAL_OBJECTS =
 
-build/lib/liblayer.a: CMakeFiles/layer.dir/src/core/core.cpp.o
+build/lib/liblayer.a: CMakeFiles/layer.dir/src/featuremap/featuremap.cpp.o
 build/lib/liblayer.a: CMakeFiles/layer.dir/src/layer/zeropadding.cpp.o
 build/lib/liblayer.a: CMakeFiles/layer.dir/src/layer/maxpooling.cpp.o
 build/lib/liblayer.a: CMakeFiles/layer.dir/src/layer/convolution.cpp.o

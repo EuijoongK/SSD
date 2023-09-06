@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/layer.dir/src/core/core.cpp.o"
-  "CMakeFiles/layer.dir/src/core/core.cpp.o.d"
   "CMakeFiles/layer.dir/src/datahandler/datahandler.cpp.o"
   "CMakeFiles/layer.dir/src/datahandler/datahandler.cpp.o.d"
+  "CMakeFiles/layer.dir/src/featuremap/featuremap.cpp.o"
+  "CMakeFiles/layer.dir/src/featuremap/featuremap.cpp.o.d"
   "CMakeFiles/layer.dir/src/layer/convolution.cpp.o"
   "CMakeFiles/layer.dir/src/layer/convolution.cpp.o.d"
   "CMakeFiles/layer.dir/src/layer/fc.cpp.o"

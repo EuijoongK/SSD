@@ -1,6 +1,9 @@
-#include "../../include/core/core.hpp"
+#include "../../include/featuremap/featuremap.hpp"
 
 #define CORE_DEBUG 1
+
+#define CONV_KERNEL 1
+#define FC_KERNEL 2
 
 FeatureMap::FeatureMap::FeatureMap(){
     if(CORE_DEBUG){
@@ -57,6 +60,7 @@ FeatureMap::Kernel::Kernel(){
     col = 0;
     channel = 0;
     num = 0;
+    type = 0;
 }
 
 FeatureMap::Kernel::Kernel(const Kernel& ref){
@@ -67,12 +71,13 @@ FeatureMap::Kernel::Kernel(const Kernel& ref){
     col = ref.col;
     channel = ref.channel;
     num = ref.num;
+    type = ref.type;
 
     data = (float*)malloc(sizeof(float) * row * col * channel * num);
     memcpy(data, ref.data, sizeof(float) * row * col * channel * num);
 }
 
-FeatureMap::Kernel::Kernel(float* _data, uint _row, uint _col, uint _channel, uint _num){
+FeatureMap::Kernel::Kernel(float* _data, uint _row, uint _col, uint _channel, uint _num, uint _type){
     if(CORE_DEBUG){
         std::cout << "Kernel class constructor called" << std::endl;
     }
@@ -81,7 +86,9 @@ FeatureMap::Kernel::Kernel(float* _data, uint _row, uint _col, uint _channel, ui
     col = _col;
     channel = _channel;
     num = _num;
+    type = _type;
 }
+
 FeatureMap::Kernel::~Kernel(){
     if(CORE_DEBUG){
         std::cout << "Kernel class destructor called" << std::endl;

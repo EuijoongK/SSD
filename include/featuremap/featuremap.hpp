@@ -30,10 +30,11 @@ namespace FeatureMap{
             uint col;
             uint channel;
             uint num;
+            uint type;
         public:
             Kernel();
             Kernel(const Kernel& ref);
-            Kernel(float* data, uint _row, uint _col, uint _channel, uint _num);
+            Kernel(float* data, uint _row, uint _col, uint _channel, uint _num, uint _type);
             ~Kernel();
     };
 }

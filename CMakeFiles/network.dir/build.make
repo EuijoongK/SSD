@@ -69,19 +69,19 @@ include CMakeFiles/network.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/network.dir/flags.make
 
-CMakeFiles/network.dir/src/core/core.cpp.o: CMakeFiles/network.dir/flags.make
-CMakeFiles/network.dir/src/core/core.cpp.o: src/core/core.cpp
-CMakeFiles/network.dir/src/core/core.cpp.o: CMakeFiles/network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/MICS/Desktop/Mobilenet/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/network.dir/src/core/core.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/network.dir/src/core/core.cpp.o -MF CMakeFiles/network.dir/src/core/core.cpp.o.d -o CMakeFiles/network.dir/src/core/core.cpp.o -c /mnt/c/Users/MICS/Desktop/Mobilenet/src/core/core.cpp
+CMakeFiles/network.dir/src/featuremap/featuremap.cpp.o: CMakeFiles/network.dir/flags.make
+CMakeFiles/network.dir/src/featuremap/featuremap.cpp.o: src/featuremap/featuremap.cpp
+CMakeFiles/network.dir/src/featuremap/featuremap.cpp.o: CMakeFiles/network.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/MICS/Desktop/Mobilenet/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/network.dir/src/featuremap/featuremap.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/network.dir/src/featuremap/featuremap.cpp.o -MF CMakeFiles/network.dir/src/featuremap/featuremap.cpp.o.d -o CMakeFiles/network.dir/src/featuremap/featuremap.cpp.o -c /mnt/c/Users/MICS/Desktop/Mobilenet/src/featuremap/featuremap.cpp
 
-CMakeFiles/network.dir/src/core/core.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/network.dir/src/core/core.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/MICS/Desktop/Mobilenet/src/core/core.cpp > CMakeFiles/network.dir/src/core/core.cpp.i
+CMakeFiles/network.dir/src/featuremap/featuremap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/network.dir/src/featuremap/featuremap.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/MICS/Desktop/Mobilenet/src/featuremap/featuremap.cpp > CMakeFiles/network.dir/src/featuremap/featuremap.cpp.i
 
-CMakeFiles/network.dir/src/core/core.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/network.dir/src/core/core.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/MICS/Desktop/Mobilenet/src/core/core.cpp -o CMakeFiles/network.dir/src/core/core.cpp.s
+CMakeFiles/network.dir/src/featuremap/featuremap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/network.dir/src/featuremap/featuremap.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/MICS/Desktop/Mobilenet/src/featuremap/featuremap.cpp -o CMakeFiles/network.dir/src/featuremap/featuremap.cpp.s
 
 CMakeFiles/network.dir/src/layer/zeropadding.cpp.o: CMakeFiles/network.dir/flags.make
 CMakeFiles/network.dir/src/layer/zeropadding.cpp.o: src/layer/zeropadding.cpp
@@ -197,7 +197,7 @@ CMakeFiles/network.dir/src/datahandler/datahandler.cpp.s: cmake_force
 
 # Object files for target network
 network_OBJECTS = \
-"CMakeFiles/network.dir/src/core/core.cpp.o" \
+"CMakeFiles/network.dir/src/featuremap/featuremap.cpp.o" \
 "CMakeFiles/network.dir/src/layer/zeropadding.cpp.o" \
 "CMakeFiles/network.dir/src/layer/maxpooling.cpp.o" \
 "CMakeFiles/network.dir/src/layer/convolution.cpp.o" \
@@ -210,7 +210,7 @@ network_OBJECTS = \
 # External object files for target network
 network_EXTERNAL_OBJECTS =
 
-build/lib/libnetwork.a: CMakeFiles/network.dir/src/core/core.cpp.o
+build/lib/libnetwork.a: CMakeFiles/network.dir/src/featuremap/featuremap.cpp.o
 build/lib/libnetwork.a: CMakeFiles/network.dir/src/layer/zeropadding.cpp.o
 build/lib/libnetwork.a: CMakeFiles/network.dir/src/layer/maxpooling.cpp.o
 build/lib/libnetwork.a: CMakeFiles/network.dir/src/layer/convolution.cpp.o

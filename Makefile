@@ -155,33 +155,6 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
-src/core/core.o: src/core/core.cpp.o
-.PHONY : src/core/core.o
-
-# target to build an object file
-src/core/core.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/core/core.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/core/core.cpp.o
-.PHONY : src/core/core.cpp.o
-
-src/core/core.i: src/core/core.cpp.i
-.PHONY : src/core/core.i
-
-# target to preprocess a source file
-src/core/core.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/core/core.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/core/core.cpp.i
-.PHONY : src/core/core.cpp.i
-
-src/core/core.s: src/core/core.cpp.s
-.PHONY : src/core/core.s
-
-# target to generate assembly for a file
-src/core/core.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/core/core.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/core/core.cpp.s
-.PHONY : src/core/core.cpp.s
-
 src/datahandler/datahandler.o: src/datahandler/datahandler.cpp.o
 .PHONY : src/datahandler/datahandler.o
 
@@ -208,6 +181,33 @@ src/datahandler/datahandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/datahandler/datahandler.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/datahandler/datahandler.cpp.s
 .PHONY : src/datahandler/datahandler.cpp.s
+
+src/featuremap/featuremap.o: src/featuremap/featuremap.cpp.o
+.PHONY : src/featuremap/featuremap.o
+
+# target to build an object file
+src/featuremap/featuremap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/featuremap/featuremap.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/featuremap/featuremap.cpp.o
+.PHONY : src/featuremap/featuremap.cpp.o
+
+src/featuremap/featuremap.i: src/featuremap/featuremap.cpp.i
+.PHONY : src/featuremap/featuremap.i
+
+# target to preprocess a source file
+src/featuremap/featuremap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/featuremap/featuremap.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/featuremap/featuremap.cpp.i
+.PHONY : src/featuremap/featuremap.cpp.i
+
+src/featuremap/featuremap.s: src/featuremap/featuremap.cpp.s
+.PHONY : src/featuremap/featuremap.s
+
+# target to generate assembly for a file
+src/featuremap/featuremap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/featuremap/featuremap.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/src/featuremap/featuremap.cpp.s
+.PHONY : src/featuremap/featuremap.cpp.s
 
 src/layer/convolution.o: src/layer/convolution.cpp.o
 .PHONY : src/layer/convolution.o
@@ -433,12 +433,12 @@ help:
 	@echo "... layer"
 	@echo "... network"
 	@echo "... test"
-	@echo "... src/core/core.o"
-	@echo "... src/core/core.i"
-	@echo "... src/core/core.s"
 	@echo "... src/datahandler/datahandler.o"
 	@echo "... src/datahandler/datahandler.i"
 	@echo "... src/datahandler/datahandler.s"
+	@echo "... src/featuremap/featuremap.o"
+	@echo "... src/featuremap/featuremap.i"
+	@echo "... src/featuremap/featuremap.s"
 	@echo "... src/layer/convolution.o"
 	@echo "... src/layer/convolution.i"
 	@echo "... src/layer/convolution.s"

@@ -1,4 +1,4 @@
-#include "../core/core.hpp"
+#include "../featuremap/featuremap.hpp"
 
 namespace Datahandler{
     

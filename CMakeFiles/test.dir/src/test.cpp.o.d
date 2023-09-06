@@ -3,7 +3,7 @@ CMakeFiles/test.dir/src/test.cpp.o: \
  /usr/include/stdc-predef.h \
  /mnt/c/Users/MICS/Desktop/Mobilenet/include/network/model.hpp \
  /mnt/c/Users/MICS/Desktop/Mobilenet/include/network/../layer/convolution.hpp \
- /mnt/c/Users/MICS/Desktop/Mobilenet/include/network/../layer/../core/core.hpp \
+ /mnt/c/Users/MICS/Desktop/Mobilenet/include/network/../layer/../featuremap/featuremap.hpp \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

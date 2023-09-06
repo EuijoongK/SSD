@@ -20,13 +20,8 @@ namespace Network{
     class Network{
         public:
             uint layer_num;
-            uint layer_index;
-            uint kernel_index;
-
             std::vector<uint> layer_list;
-
             FeatureMap::FeatureMap* input = NULL;
-            FeatureMap::FeatureMap* current = NULL;
 
             FeatureMap::Kernel kernel_arr[MAX_LAYER_NUM];
             FeatureMap::FeatureMap map_arr[MAX_LAYER_NUM];

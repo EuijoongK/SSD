@@ -2,13 +2,27 @@
 
 namespace Layer {
 
-	void calculate_maxpooling_sz(const FeatureMap::FeatureMap& input, const uint kernel_row, const uint kernel_col, const uint stride_row, const uint stride_col, uint& output_row, uint& output_col) {
+	void calculate_maxpooling_sz(
+		const FeatureMap::FeatureMap& input, 
+		const uint kernel_row, 
+		const uint kernel_col, 
+		const uint stride_row, 
+		const uint stride_col, 
+		uint& output_row, uint& output_col
+	) {
 		output_row = static_cast<uint>((input.row - kernel_row) / stride_row) + 1;
 		output_col = static_cast<uint>((input.col - kernel_col) / stride_col) + 1;
 		return;
 	}
 	
-	void Maxpooling(FeatureMap::FeatureMap& output, const FeatureMap::FeatureMap& input, const uint kernel_row, const uint kernel_col, const uint stride_row, const uint stride_col){
+	void Maxpooling(
+		FeatureMap::FeatureMap& output, 
+		const FeatureMap::FeatureMap& input, 
+		const uint kernel_row, 
+		const uint kernel_col, 
+		const uint stride_row, 
+		const uint stride_col
+	){
 		uint output_row = 0;
 		uint output_col = 0;
 		calculate_maxpooling_sz(input, kernel_row, kernel_col, stride_row, stride_col, output_row, output_col);

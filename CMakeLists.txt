@@ -13,7 +13,7 @@ set(SRC_DIR src)
 
 # 라이브러리 소스 파일 목록
 set(LIB_SRC
-    ${SRC_DIR}/core/core.cpp
+    ${SRC_DIR}/featuremap/featuremap.cpp
     ${SRC_DIR}/layer/zeropadding.cpp
     ${SRC_DIR}/layer/maxpooling.cpp
     ${SRC_DIR}/layer/convolution.cpp
