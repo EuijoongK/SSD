@@ -32,13 +32,15 @@ namespace Layer {
 		uint input_sz = input.row * input.col;
 		uint output_sz = output_row * output_col;
 
-		for (uint i = 0; i < input.channel; ++i) {
+		uint i, j, k, l;
+
+		for (i = 0; i < input.channel; ++i) {
 			float* input_ptr = input.data + i * input_sz;
 			float* output_ptr = output_data + i * output_sz;
 
-			for (uint j = 0; j < output_row; ++j) {
-				for (uint k = 0; k < output_col; ++k) {
-					for (uint l = 0; l < kernel_row; ++l) {
+			for (j = 0; j < output_row; ++j) {
+				for (k = 0; k < output_col; ++k) {
+					for (l = 0; l < kernel_row; ++l) {
 						memcpy(value_arr + l * kernel_col, input_ptr + (j * stride_row + l) * input.col + k * stride_col, sizeof(float) * kernel_col);
 					}
 					*(output_ptr + j * output_col + k) = *std::max_element(value_arr, value_arr + kernel_row * kernel_col);
@@ -54,4 +56,5 @@ namespace Layer {
 
 		return;
 	}
+	
 }

@@ -88,16 +88,18 @@ namespace Layer {
 		uint input_sz = input.row * input.col;
 		uint kernel_sz = kernel.row * kernel.col;
 
-		for(uint k = 0; k < kernel.num; ++k){
+		uint k, i, j;
+
+		for(k = 0; k < kernel.num; ++k){
 			float* output_ptr = output_data + k * output_sz;
 			float* kernel_ptr = kernel.data + k * kernel_sz;
-			for(uint r = 0; r < output_row; ++r){
-				for(uint c = 0; c < output_col; ++c){
-					float result = patch_conv(input.data + (r * stride_row) * input.col + stride_col * c, kernel_ptr, input.row, input.col, kernel.row, kernel.col);
+			for(i = 0; i < output_row; ++i){
+				for(j = 0; j < output_col; ++j){
+					float result = patch_conv(input.data + (i * stride_row) * input.col + stride_col * j, kernel_ptr, input.row, input.col, kernel.row, kernel.col);
 					if(result < 0){
-						*(output_ptr + r * output_col + c) = 0;
+						*(output_ptr + i * output_col + j) = 0;
 					}else{
-						*(output_ptr + r * output_col + c) = result;
+						*(output_ptr + i * output_col + j) = result;
 					}
 				}
 			}
@@ -110,4 +112,5 @@ namespace Layer {
 
 		return;
 	}
+	
 }

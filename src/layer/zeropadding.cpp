@@ -17,11 +17,13 @@ namespace Layer {
 		uint input_sz = input.row * input.col;
 		uint output_sz = output_row * output_col;
 		
-		for (uint i = 0; i < input.channel; ++i) {
+		uint i, j;
+
+		for (i = 0; i < input.channel; ++i) {
 			float* input_ptr = input.data + i * input_sz;
 			float* output_ptr = output_data + i * output_sz;
 
-			for (unsigned j = 0; j < input.row; ++j) {
+			for (j = 0; j < input.row; ++j) {
 				memcpy(output_ptr + (j + padding_layer) * output_col + padding_layer, input_ptr + j * input.col, sizeof(float) * input.col);
 			}
 		}
