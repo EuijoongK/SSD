@@ -31,7 +31,7 @@ namespace Network{
             Network(const Network& ref);
 
             void add_layer(uint layer_type, const FeatureMap::Kernel& kernel);
-            void run_model_step();
+            void run_model();
 
             ~Network();
     };

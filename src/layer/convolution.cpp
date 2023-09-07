@@ -21,7 +21,8 @@ namespace Layer {
 		const uint input_row, 
 		const uint input_col, 
 		const uint kernel_row, 
-		const uint kernel_col
+		const uint kernel_col,
+		const float& bias
 	) {
 		float sum = 0.0;
 		uint i, j;
@@ -32,7 +33,7 @@ namespace Layer {
 				sum += (*(input_row + j)) * (*(kernel_row + j));
 			}
 		}
-		return sum;
+		return sum + bias;
 	}
 
 	void Conv(
@@ -59,7 +60,7 @@ namespace Layer {
 			for(i = 0; i < output_row; ++i){
 				for(j = 0; j < output_col; ++j){
 					*(output_ptr + i * output_col + j) = patch_conv(input.data + (i * stride_row) * input.col + stride_col * j,
-					kernel_ptr, input.row, input.col, kernel.row, kernel.col);
+					kernel_ptr, input.row, input.col, kernel.row, kernel.col, kernel.bias);
 				}
 			}
 		}
@@ -95,7 +96,8 @@ namespace Layer {
 			float* kernel_ptr = kernel.data + k * kernel_sz;
 			for(i = 0; i < output_row; ++i){
 				for(j = 0; j < output_col; ++j){
-					float result = patch_conv(input.data + (i * stride_row) * input.col + stride_col * j, kernel_ptr, input.row, input.col, kernel.row, kernel.col);
+					float result = patch_conv(input.data + (i * stride_row) * input.col + stride_col * j, 
+						kernel_ptr, input.row, input.col, kernel.row, kernel.col, kernel.bias);
 					if(result < 0){
 						*(output_ptr + i * output_col + j) = 0;
 					}else{

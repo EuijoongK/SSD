@@ -18,7 +18,8 @@ namespace Layer {
 		const uint input_row, 
 		const uint input_col, 
 		const uint kernel_row, 
-		const uint kernel_col
+		const uint kernel_col,
+		const float& bias
 	);
 
 	void Conv(

@@ -18,8 +18,8 @@ void Network::Network::add_layer(uint layer_type, const FeatureMap::Kernel& kern
     kernel_arr[++layer_num] = kernel;
 }
 
-void Network::Network::run_model_step(){
-
+void Network::Network::run_model(){
+    
     FeatureMap::FeatureMap* currnet_featuremap = input;
     FeatureMap::Kernel* current_kernel = kernel_arr;
     FeatureMap::FeatureMap* output = map_arr;
