@@ -3,12 +3,12 @@
 
 #define MAX_LAYER_NUM 10
 
-#define EMPTY 0
-#define CONVOLUTION 1
-#define MAXPOOLING 2
-#define ZEROPADDING 3
-#define FLATTEN 4
-#define FULLYCONNECTED 5
+#define CONV 1
+#define FC 2
+#define MAXPOOLING 3
+#define RELU 4
+#define SOFTMAX 5
+#define ZEROPADDING 6
 
 #include "../layer/convolution.hpp"
 #include "../layer/maxpooling.hpp"
@@ -29,7 +29,10 @@ namespace Network{
         public:
             Network();
             Network(const Network& ref);
+
+            void add_layer(uint layer_type, const FeatureMap::Kernel& kernel);
             void run_model_step();
+
             ~Network();
     };
 }
