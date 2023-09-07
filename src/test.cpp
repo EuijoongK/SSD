@@ -28,7 +28,7 @@ int main() {
     *(kernel_data + 4) = 1;
     *(kernel_data + 7) = 1;
 
-    FeatureMap::Kernel kernel(kernel_data, kernel_row, kernel_col, kernel_channel, kernel_num, 0, 0.0);
+    FeatureMap::Kernel kernel(kernel_data, kernel_row, kernel_col, kernel_channel, kernel_num, 0, 0.5);
 
     FeatureMap::FeatureMap output(NULL, 0, 0, 0);
     Layer::Conv(output, input, kernel, 1, 1);

@@ -2,6 +2,7 @@
 #define NETWORK_H
 
 #define MAX_LAYER_NUM 10
+#define MAX_KERNEL_NUM 10000
 
 #define CONV 1
 #define FC 2
@@ -23,8 +24,8 @@ namespace Network{
             std::vector<uint> layer_list;
             FeatureMap::FeatureMap* input = NULL;
 
-            FeatureMap::Kernel kernel_arr[MAX_LAYER_NUM];
             FeatureMap::FeatureMap map_arr[MAX_LAYER_NUM];
+            FeatureMap::Kernel kernel_arr[MAX_KERNEL_NUM];
 
         public:
             Network();

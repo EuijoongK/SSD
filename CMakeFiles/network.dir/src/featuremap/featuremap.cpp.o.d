@@ -1,7 +1,7 @@
 CMakeFiles/network.dir/src/featuremap/featuremap.cpp.o: \
- /mnt/c/Users/MICS/Desktop/Mobilenet/src/featuremap/featuremap.cpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/featuremap/featuremap.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/MICS/Desktop/Mobilenet/src/featuremap/../../include/featuremap/featuremap.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/featuremap/../../include/featuremap/featuremap.hpp \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
