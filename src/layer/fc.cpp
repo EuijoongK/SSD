@@ -6,15 +6,14 @@ void Layer::Fullyconnected(
     const FeatureMap::Kernel& kernel
 ){
 
-    uint i, j;
+    uint i, j, k;
 
-    for(i = 0; i < kernel.row; ++i){
+    for(i = 0; i < kernel.num; ++i){
         float sum = 0.0;
-        for(j =0; j < kernel.col - 1; ++j){
-            sum += ((*(input.data + i)) * (*(kernel.data + i * kernel.col + j)));
+        for(j = 0; j < kernel.col; ++j){
+            sum += *(input.data + j) * *(kernel.weights + j);
         }
+        *(output.data + i) = sum + *(kernel.bias + i);
     }
-    for(i = 0; i < kernel.row; ++i){
-        *(output.data + i) += *(kernel.data + kernel.col * i + kernel.col - 1);
-    }
+    
 }

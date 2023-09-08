@@ -39,8 +39,8 @@ FeatureMap::FeatureMap::FeatureMap(float* _data, uint _row, uint _col, uint _cha
 
 void FeatureMap::FeatureMap::flatten(){
     uint sz = row * col * channel;
-    row = sz;
-    col = 1;
+    row = 1;
+    col = sz;
     channel = 1;
 }
 
@@ -55,13 +55,13 @@ FeatureMap::Kernel::Kernel(){
     if(CORE_DEBUG){
         std::cout << "Kernel class constructor called" << std::endl;
     }
-    data = NULL;
+    weights = NULL;
+    bias = NULL;
     row = 0;
     col = 0;
     channel = 0;
     num = 0;
     type = 0;
-    bias = 0.0;
 }
 
 FeatureMap::Kernel::Kernel(const Kernel& ref){
@@ -75,26 +75,30 @@ FeatureMap::Kernel::Kernel(const Kernel& ref){
     type = ref.type;
     bias = ref.bias;
 
-    data = (float*)malloc(sizeof(float) * row * col * channel * num);
-    memcpy(data, ref.data, sizeof(float) * row * col * channel * num);
+    weights = (float*)malloc(sizeof(float) * row * col * channel * num);
+    memcpy(weights, ref.weights, sizeof(float) * row * col * channel * num);
+
+    bias = (float*)malloc(sizeof(float) * num);
+    memcpy(bias, ref.bias, sizeof(float) * num);
 }
 
-FeatureMap::Kernel::Kernel(float* _data, uint _row, uint _col, uint _channel, uint _num, uint _type, float _bias){
+FeatureMap::Kernel::Kernel(float* _weights, float* _bias, uint _row, uint _col, uint _channel, uint _num, uint _type){
     if(CORE_DEBUG){
         std::cout << "Kernel class constructor called" << std::endl;
     }
-    data = _data;
+    weights = _weights;
+    bias = _bias;
     row = _row;
     col = _col;
     channel = _channel;
     num = _num;
     type = _type;
-    bias = _bias;
 }
 
 FeatureMap::Kernel::~Kernel(){
     if(CORE_DEBUG){
         std::cout << "Kernel class destructor called" << std::endl;
     }
-    free(data);
+    free(weights);
+    free(bias);
 };

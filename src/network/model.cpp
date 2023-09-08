@@ -9,7 +9,7 @@ Network::Network::Network(const Network& ref){
     layer_list = ref.layer_list;
     input = ref.input;
 
-    memcpy(kernel_arr, ref.kernel_arr, sizeof(FeatureMap::Kernel) * MAX_LAYER_NUM);
+    memcpy(kernel_arr, ref.kernel_arr, sizeof(FeatureMap::Kernel) * MAX_KERNEL_NUM);
     memcpy(map_arr, ref.map_arr, sizeof(FeatureMap::FeatureMap) * MAX_LAYER_NUM);
 }
 

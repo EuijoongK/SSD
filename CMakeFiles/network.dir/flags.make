@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/sammy/Documents/project/mobilenet/include
+CXX_INCLUDES = -I/mnt/c/Users/MICS/Desktop/Mobilenet/include
 
 CXX_FLAGS =  -fno-elide-constructors
 

@@ -1,0 +1,13 @@
+8
+conv2d
+3 3 1 32 2
+max_pooling2d
+conv2d_1
+3 3 32 64 2
+max_pooling2d_1
+flatten
+dense
+128 2
+dropout
+dense_1
+10 2

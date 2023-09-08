@@ -56,11 +56,11 @@ namespace Layer {
 
 		for(k = 0; k < kernel.num; ++k){
 			float* output_ptr = output_data + k * output_sz;
-			float* kernel_ptr = kernel.data + k * kernel_sz;
+			float* kernel_ptr = kernel.weights + k * kernel_sz;
 			for(i = 0; i < output_row; ++i){
 				for(j = 0; j < output_col; ++j){
 					*(output_ptr + i * output_col + j) = patch_conv(input.data + (i * stride_row) * input.col + stride_col * j,
-					kernel_ptr, input.row, input.col, kernel.row, kernel.col, kernel.bias);
+					kernel_ptr, input.row, input.col, kernel.row, kernel.col, *(kernel.bias + k));
 				}
 			}
 		}
@@ -93,11 +93,11 @@ namespace Layer {
 
 		for(k = 0; k < kernel.num; ++k){
 			float* output_ptr = output_data + k * output_sz;
-			float* kernel_ptr = kernel.data + k * kernel_sz;
+			float* kernel_ptr = kernel.weights + k * kernel_sz;
 			for(i = 0; i < output_row; ++i){
 				for(j = 0; j < output_col; ++j){
 					float result = patch_conv(input.data + (i * stride_row) * input.col + stride_col * j, 
-						kernel_ptr, input.row, input.col, kernel.row, kernel.col, kernel.bias);
+						kernel_ptr, input.row, input.col, kernel.row, kernel.col, *(kernel.bias + k));
 					if(result < 0){
 						*(output_ptr + i * output_col + j) = 0;
 					}else{

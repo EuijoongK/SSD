@@ -25,17 +25,17 @@ namespace FeatureMap{
 
     class Kernel{
         public:
-            float* data;
+            float* weights;
+            float* bias;
             uint row;
             uint col;
             uint channel;
             uint num;
             uint type;
-            float bias;
         public:
             Kernel();
             Kernel(const Kernel& ref);
-            Kernel(float* data, uint _row, uint _col, uint _channel, uint _num, uint _type, float _bias);
+            Kernel(float* _weights, float* _bias, uint _row, uint _col, uint _channel, uint _num, uint _type);
             ~Kernel();
     };
 }

@@ -1,8 +1,8 @@
 CMakeFiles/network.dir/src/layer/fc.cpp.o: \
- /mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/fc.cpp \
+ /mnt/c/Users/MICS/Desktop/Mobilenet/src/layer/fc.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/../../include/layer/fc.hpp \
- /mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/../../include/layer/../featuremap/featuremap.hpp \
+ /mnt/c/Users/MICS/Desktop/Mobilenet/src/layer/../../include/layer/fc.hpp \
+ /mnt/c/Users/MICS/Desktop/Mobilenet/src/layer/../../include/layer/../featuremap/featuremap.hpp \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

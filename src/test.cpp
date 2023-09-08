@@ -1,4 +1,5 @@
 #include "network/model.hpp"
+#include "datahandler/datahandler.hpp"
 #include <iostream>
 
 int main() {
@@ -22,13 +23,16 @@ int main() {
     uint kernel_num = 1;
     float* kernel_data = (float*)malloc(sizeof(float) * kernel_row * kernel_col * kernel_channel * kernel_num);
     memset(kernel_data, 0, sizeof(float) * kernel_row * kernel_col * kernel_channel * kernel_num);
+
+    float* kernel_bias = (float*)malloc(sizeof(float) * kernel_num);
+    memset(kernel_bias, 0, sizeof(kernel_bias));
     
     *kernel_data = 1;
     *(kernel_data + 3) = 1;
     *(kernel_data + 4) = 1;
     *(kernel_data + 7) = 1;
 
-    FeatureMap::Kernel kernel(kernel_data, kernel_row, kernel_col, kernel_channel, kernel_num, 0, 0.5);
+    FeatureMap::Kernel kernel(kernel_data, kernel_bias, kernel_row, kernel_col, kernel_channel, kernel_num, 0);
 
     FeatureMap::FeatureMap output(NULL, 0, 0, 0);
     Layer::Conv(output, input, kernel, 1, 1);
@@ -40,4 +44,6 @@ int main() {
         std::cout << std::endl;
     }
     
+    std::string file_directory = "./Keras/";
+    std::string file_name = "layer1_bias.txt";
 }
