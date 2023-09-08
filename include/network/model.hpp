@@ -10,6 +10,8 @@
 #define RELU 4
 #define SOFTMAX 5
 #define ZEROPADDING 6
+#define FLATTEN 7
+#define DROPOUT 8
 
 #include "../layer/convolution.hpp"
 #include "../layer/maxpooling.hpp"

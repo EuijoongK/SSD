@@ -1,6 +1,6 @@
 #include "../../include/featuremap/featuremap.hpp"
 
-#define CORE_DEBUG 1
+#define CORE_DEBUG 0
 
 #define CONV_KERNEL 1
 #define FC_KERNEL 2
