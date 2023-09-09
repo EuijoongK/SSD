@@ -26,7 +26,7 @@ namespace Network{
             std::vector<uint> layer_list;
             FeatureMap::FeatureMap* input = NULL;
 
-            FeatureMap::FeatureMap map_arr[MAX_LAYER_NUM];
+            FeatureMap::FeatureMap featuremap_arr[MAX_LAYER_NUM];
             FeatureMap::Kernel kernel_arr[MAX_KERNEL_NUM];
 
         public:
@@ -35,7 +35,8 @@ namespace Network{
 
             void add_layer(uint layer_type, const FeatureMap::Kernel& kernel);
             void run_model();
-
+            void summary();
+            
             ~Network();
     };
 }

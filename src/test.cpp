@@ -7,56 +7,23 @@ int main() {
     std::string file_name = "layer_info.txt";
 
     Network::Network model;
-    Datahandler::import_model(file_directory + file_name, &model);
+    Datahandler::import_model_info(file_directory + file_name, &model);
+    model.summary();
 
-    int index = 0;
-    auto layer_list = model.layer_list;
-    FeatureMap::Kernel* kernel_ptr = model.kernel_arr;
+    Datahandler::import_kernel("./Keras/layer1.txt", "./Keras/layer1_bias.txt", model.kernel_arr);
 
-    for(; index < model.layer_num; ++index){
-        auto layer_type = layer_list[index];
-        if(layer_type == CONV){
-            std::cout << "conv2d" << std::endl;
-            std::cout << (kernel_ptr + index) -> row << " ";
-            std::cout << (kernel_ptr + index) -> col << " ";
-            std::cout << (kernel_ptr + index) -> channel << " ";
-            std::cout << (kernel_ptr + index) -> num << " ";
-            std::cout << std::endl;
-        }
-        else if(layer_type == FC){
-            std::cout << "dense" << std::endl;
-            std::cout << (kernel_ptr + index) -> row << " ";
-            std::cout << (kernel_ptr + index) -> col << " ";
-            std::cout << (kernel_ptr + index) -> channel << " ";
-            std::cout << (kernel_ptr + index) -> num << " ";
-            std::cout << std::endl;
-        }
-        else if(layer_type == MAXPOOLING){
-            std::cout << "maxpooling2d" << std::endl;
-            std::cout << (kernel_ptr + index) -> row << " ";
-            std::cout << (kernel_ptr + index) -> col << " ";
-            std::cout << (kernel_ptr + index) -> channel << " ";
-            std::cout << (kernel_ptr + index) -> num << " ";
-            std::cout << std::endl;
-        }
-        else if(layer_type == ZEROPADDING){
-            std::cout << "zeropadding" << std::endl;
-            std::cout << (kernel_ptr + index) -> row << " ";
-            std::cout << (kernel_ptr + index) -> col << " ";
-            std::cout << (kernel_ptr + index) -> channel << " ";
-            std::cout << (kernel_ptr + index) -> num << " ";
-            std::cout << std::endl;
-        }
-        else if(layer_type == FLATTEN){
-            std::cout << "flatten" << std::endl;
-            std::cout << (kernel_ptr + index) -> row << " ";
-            std::cout << (kernel_ptr + index) -> col << " ";
-            std::cout << (kernel_ptr + index) -> channel << " ";
-            std::cout << (kernel_ptr + index) -> num << " ";
-            std::cout << std::endl;
-        }
-        else if(layer_type == DROPOUT){
-            std::cout << "dropout" << std::endl;
+    FeatureMap::Kernel* kernel = model.kernel_arr;
+    uint i, j, k, l;
+    uint sz1 = kernel -> channel * kernel -> row * kernel -> col;
+    uint sz2 = kernel -> row * kernel -> col;
+    for(i = 0; i < kernel -> num; ++i){
+        for(j = 0; j < kernel -> channel; ++j){
+            for(k = 0; k < kernel -> row; ++k){
+                for(l = 0; l < kernel -> col; ++l){
+                    std::cout << *(kernel -> weights + i * sz1 + j * sz2 + k * kernel -> col + l) << " ";
+                }
+                std::cout << std::endl;
+            }
         }
     }
 }

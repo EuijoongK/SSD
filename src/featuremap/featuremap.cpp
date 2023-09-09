@@ -2,9 +2,6 @@
 
 #define CORE_DEBUG 0
 
-#define CONV_KERNEL 1
-#define FC_KERNEL 2
-
 FeatureMap::FeatureMap::FeatureMap(){
     if(CORE_DEBUG){
         std::cout << "FeatureMap class constructor called" << std::endl;
@@ -42,6 +39,23 @@ void FeatureMap::FeatureMap::flatten(){
     row = 1;
     col = sz;
     channel = 1;
+}
+
+void FeatureMap::FeatureMap::summary(){
+    uint i, j, k, l;
+    uint sz = row * col;
+
+    std::cout << "FeatureMap summary" << std::endl;
+    std::cout << "Size : " << row << " x " << col << " x " << channel << std::endl;
+    for(i = 0; i < channel; ++i){
+        for(j = 0; j < row; ++j){
+            for(l = 0; l < col; ++l){
+                std::cout << *(data + i * sz + j * col + l) << " ";
+            }
+            std::cout << std::endl;
+        }
+        std::cout << std::endl;
+    }
 }
 
 FeatureMap::FeatureMap::~FeatureMap(){
@@ -93,6 +107,27 @@ FeatureMap::Kernel::Kernel(float* _weights, float* _bias, uint _row, uint _col, 
     channel = _channel;
     num = _num;
     type = _type;
+}
+
+void FeatureMap::Kernel::summary(){
+    uint i, j, k, l;
+    uint sz1 = row * col * channel;
+    uint sz2 = row * col;
+
+    std::cout << "Kernel Sumamry" << std::endl;
+    std::cout << "Size : " << row << " x " << col << " x " << channel << " x " << num << std::endl;
+    for(i = 0; i < num; ++i){
+        std::cout << "K " << i + 1 << std::endl;
+        for(j = 0; j < channel; ++j){
+            for(k = 0; k < row; ++k){
+                for(l = 0; l < col; ++l){
+                    std::cout << *(weights + i * sz1 + j * sz2 + k * col + l) << " ";
+                }
+            }
+            std::cout << std::endl;
+        }
+        std::cout << std::endl;
+    }
 }
 
 FeatureMap::Kernel::~Kernel(){
