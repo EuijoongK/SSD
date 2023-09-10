@@ -52,13 +52,18 @@ void Model::Model::summary(){
     uint index = 0;
     FeatureMap::Kernel* kernel_ptr = kernel_arr;
 
+    std::cout << "Model" << std::endl;
+    std::cout << "---------------------------------------------------" << std::endl;
+    std::cout << "Layer(type)          Kernel shape           Param #" << std::endl;
+    std::cout << "===================================================" << std::endl;
     for(; index < layer_num; ++index){
+
         auto layer_type = layer_list[index];
         if(layer_type == CONV){
-            std::cout << "conv" << std::endl;
+            std::cout << "conv                 ";
         }
         else if(layer_type == FC){
-            std::cout << "dense" << std::endl;
+            std::cout << "dense                ";
         }
         else if(layer_type == MAXPOOLING){
             std::cout << "maxpooling" << std::endl;

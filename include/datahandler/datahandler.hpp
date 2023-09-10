@@ -12,9 +12,13 @@ namespace Datahandler{
             std::string file_format;
             std::string file_directory;
         public:
-            Datahandler(std::string& _file_format);
-            void set_file_format(std::string& _file_format);
-            void set_directory(std::string& _file_directory);
+            Datahandler();
+            Datahandler(const std::string& _file_format);
+            void set_file_format(const std::string& _file_format);
+            void set_directory(const std::string& _file_directory);
+
+            void import_model_info_to(Model::Model* model_ptr);
+            void import_layer_to(Model::Model* model_ptr);
             ~Datahandler();
     };
 
