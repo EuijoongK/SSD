@@ -167,19 +167,19 @@ CMakeFiles/layer.dir/src/layer/softmax.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer.dir/src/layer/softmax.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/softmax.cpp -o CMakeFiles/layer.dir/src/layer/softmax.cpp.s
 
-CMakeFiles/layer.dir/src/network/model.cpp.o: CMakeFiles/layer.dir/flags.make
-CMakeFiles/layer.dir/src/network/model.cpp.o: src/network/model.cpp
-CMakeFiles/layer.dir/src/network/model.cpp.o: CMakeFiles/layer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sammy/Documents/project/mobilenet/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/layer.dir/src/network/model.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer.dir/src/network/model.cpp.o -MF CMakeFiles/layer.dir/src/network/model.cpp.o.d -o CMakeFiles/layer.dir/src/network/model.cpp.o -c /mnt/c/Users/sammy/Documents/project/mobilenet/src/network/model.cpp
+CMakeFiles/layer.dir/src/model/model.cpp.o: CMakeFiles/layer.dir/flags.make
+CMakeFiles/layer.dir/src/model/model.cpp.o: src/model/model.cpp
+CMakeFiles/layer.dir/src/model/model.cpp.o: CMakeFiles/layer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sammy/Documents/project/mobilenet/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/layer.dir/src/model/model.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer.dir/src/model/model.cpp.o -MF CMakeFiles/layer.dir/src/model/model.cpp.o.d -o CMakeFiles/layer.dir/src/model/model.cpp.o -c /mnt/c/Users/sammy/Documents/project/mobilenet/src/model/model.cpp
 
-CMakeFiles/layer.dir/src/network/model.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer.dir/src/network/model.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sammy/Documents/project/mobilenet/src/network/model.cpp > CMakeFiles/layer.dir/src/network/model.cpp.i
+CMakeFiles/layer.dir/src/model/model.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer.dir/src/model/model.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sammy/Documents/project/mobilenet/src/model/model.cpp > CMakeFiles/layer.dir/src/model/model.cpp.i
 
-CMakeFiles/layer.dir/src/network/model.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer.dir/src/network/model.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sammy/Documents/project/mobilenet/src/network/model.cpp -o CMakeFiles/layer.dir/src/network/model.cpp.s
+CMakeFiles/layer.dir/src/model/model.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer.dir/src/model/model.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sammy/Documents/project/mobilenet/src/model/model.cpp -o CMakeFiles/layer.dir/src/model/model.cpp.s
 
 CMakeFiles/layer.dir/src/datahandler/datahandler.cpp.o: CMakeFiles/layer.dir/flags.make
 CMakeFiles/layer.dir/src/datahandler/datahandler.cpp.o: src/datahandler/datahandler.cpp
@@ -204,7 +204,7 @@ layer_OBJECTS = \
 "CMakeFiles/layer.dir/src/layer/relu.cpp.o" \
 "CMakeFiles/layer.dir/src/layer/fc.cpp.o" \
 "CMakeFiles/layer.dir/src/layer/softmax.cpp.o" \
-"CMakeFiles/layer.dir/src/network/model.cpp.o" \
+"CMakeFiles/layer.dir/src/model/model.cpp.o" \
 "CMakeFiles/layer.dir/src/datahandler/datahandler.cpp.o"
 
 # External object files for target layer
@@ -217,7 +217,7 @@ build/lib/liblayer.a: CMakeFiles/layer.dir/src/layer/convolution.cpp.o
 build/lib/liblayer.a: CMakeFiles/layer.dir/src/layer/relu.cpp.o
 build/lib/liblayer.a: CMakeFiles/layer.dir/src/layer/fc.cpp.o
 build/lib/liblayer.a: CMakeFiles/layer.dir/src/layer/softmax.cpp.o
-build/lib/liblayer.a: CMakeFiles/layer.dir/src/network/model.cpp.o
+build/lib/liblayer.a: CMakeFiles/layer.dir/src/model/model.cpp.o
 build/lib/liblayer.a: CMakeFiles/layer.dir/src/datahandler/datahandler.cpp.o
 build/lib/liblayer.a: CMakeFiles/layer.dir/build.make
 build/lib/liblayer.a: CMakeFiles/layer.dir/link.txt

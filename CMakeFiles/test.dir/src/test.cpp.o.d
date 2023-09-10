@@ -1,9 +1,9 @@
 CMakeFiles/test.dir/src/test.cpp.o: \
  /mnt/c/Users/sammy/Documents/project/mobilenet/src/test.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/sammy/Documents/project/mobilenet/include/network/model.hpp \
- /mnt/c/Users/sammy/Documents/project/mobilenet/include/network/../layer/convolution.hpp \
- /mnt/c/Users/sammy/Documents/project/mobilenet/include/network/../layer/../featuremap/featuremap.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/include/model/model.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/include/model/../layer/convolution.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/include/model/../layer/../featuremap/featuremap.hpp \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -199,13 +199,13 @@ CMakeFiles/test.dir/src/test.cpp.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
  /usr/include/c++/11/pstl/execution_defs.h \
- /mnt/c/Users/sammy/Documents/project/mobilenet/include/network/../layer/maxpooling.hpp \
- /mnt/c/Users/sammy/Documents/project/mobilenet/include/network/../layer/zeropadding.hpp \
- /mnt/c/Users/sammy/Documents/project/mobilenet/include/network/../layer/fc.hpp \
- /mnt/c/Users/sammy/Documents/project/mobilenet/include/network/../layer/relu.hpp \
- /mnt/c/Users/sammy/Documents/project/mobilenet/include/network/../layer/softmax.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/include/model/../layer/maxpooling.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/include/model/../layer/zeropadding.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/include/model/../layer/fc.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/include/model/../layer/relu.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/include/model/../layer/softmax.hpp \
  /mnt/c/Users/sammy/Documents/project/mobilenet/include/datahandler/datahandler.hpp \
- /mnt/c/Users/sammy/Documents/project/mobilenet/include/datahandler/../network/model.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/include/datahandler/../model/model.hpp \
  /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \

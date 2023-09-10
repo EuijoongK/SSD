@@ -1,8 +1,9 @@
-CMakeFiles/network.dir/src/layer/maxpooling.cpp.o: \
- /mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/maxpooling.cpp \
+CMakeFiles/model.dir/src/model/model.cpp.o: \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/model/model.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/../../include/layer/maxpooling.hpp \
- /mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/../../include/layer/../featuremap/featuremap.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/model/../../include/model/model.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/model/../../include/model/../layer/convolution.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/model/../../include/model/../layer/../featuremap/featuremap.hpp \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -197,4 +198,9 @@ CMakeFiles/network.dir/src/layer/maxpooling.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /usr/include/c++/11/pstl/execution_defs.h
+ /usr/include/c++/11/pstl/execution_defs.h \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/model/../../include/model/../layer/maxpooling.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/model/../../include/model/../layer/zeropadding.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/model/../../include/model/../layer/fc.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/model/../../include/model/../layer/relu.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/model/../../include/model/../layer/softmax.hpp

@@ -1,7 +1,7 @@
-CMakeFiles/network.dir/src/layer/convolution.cpp.o: \
- /mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/convolution.cpp \
+CMakeFiles/model.dir/src/layer/softmax.cpp.o: \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/softmax.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/../../include/layer/convolution.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/../../include/layer/softmax.hpp \
  /mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/../../include/layer/../featuremap/featuremap.hpp \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

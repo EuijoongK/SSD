@@ -15,8 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/layer.dir/src/layer/softmax.cpp.o.d"
   "CMakeFiles/layer.dir/src/layer/zeropadding.cpp.o"
   "CMakeFiles/layer.dir/src/layer/zeropadding.cpp.o.d"
-  "CMakeFiles/layer.dir/src/network/model.cpp.o"
-  "CMakeFiles/layer.dir/src/network/model.cpp.o.d"
+  "CMakeFiles/layer.dir/src/model/model.cpp.o"
+  "CMakeFiles/layer.dir/src/model/model.cpp.o.d"
   "build/lib/liblayer.a"
   "build/lib/liblayer.pdb"
 )

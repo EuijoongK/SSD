@@ -37,4 +37,4 @@ set_target_properties(model PROPERTIES ARCHIVE_OUTPUT_DIRECTORY build/lib)
 add_executable(test ${SRC_DIR}/test.cpp)
 
 # 라이브러리 링크 설정
-target_link_libraries(test layer network)
+target_link_libraries(test layer model)

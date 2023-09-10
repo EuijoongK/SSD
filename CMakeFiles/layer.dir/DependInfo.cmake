@@ -16,7 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/relu.cpp" "CMakeFiles/layer.dir/src/layer/relu.cpp.o" "gcc" "CMakeFiles/layer.dir/src/layer/relu.cpp.o.d"
   "/mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/softmax.cpp" "CMakeFiles/layer.dir/src/layer/softmax.cpp.o" "gcc" "CMakeFiles/layer.dir/src/layer/softmax.cpp.o.d"
   "/mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/zeropadding.cpp" "CMakeFiles/layer.dir/src/layer/zeropadding.cpp.o" "gcc" "CMakeFiles/layer.dir/src/layer/zeropadding.cpp.o.d"
-  "/mnt/c/Users/sammy/Documents/project/mobilenet/src/network/model.cpp" "CMakeFiles/layer.dir/src/network/model.cpp.o" "gcc" "CMakeFiles/layer.dir/src/network/model.cpp.o.d"
+  "/mnt/c/Users/sammy/Documents/project/mobilenet/src/model/model.cpp" "CMakeFiles/layer.dir/src/model/model.cpp.o" "gcc" "CMakeFiles/layer.dir/src/model/model.cpp.o.d"
   )
 
 # Targets to which this target links.

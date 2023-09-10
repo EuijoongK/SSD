@@ -1,4 +1,4 @@
-CMakeFiles/network.dir/src/layer/relu.cpp.o: \
+CMakeFiles/model.dir/src/layer/relu.cpp.o: \
  /mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/relu.cpp \
  /usr/include/stdc-predef.h \
  /mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/../../include/layer/relu.hpp \

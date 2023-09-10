@@ -4,7 +4,7 @@
 CMakeFiles/layer.dir/src/datahandler/datahandler.cpp.o: src/datahandler/datahandler.cpp \
   /usr/include/stdc-predef.h \
   include/datahandler/datahandler.hpp \
-  include/network/model.hpp \
+  include/model/model.hpp \
   include/layer/convolution.hpp \
   include/featuremap/featuremap.hpp \
   /usr/include/c++/11/iostream \
@@ -246,6 +246,9 @@ CMakeFiles/layer.dir/src/datahandler/datahandler.cpp.o: src/datahandler/datahand
   /usr/include/c++/11/pstl/execution_defs.h \
   include/layer/maxpooling.hpp \
   include/layer/zeropadding.hpp \
+  include/layer/fc.hpp \
+  include/layer/relu.hpp \
+  include/layer/softmax.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -1945,9 +1948,9 @@ CMakeFiles/layer.dir/src/layer/zeropadding.cpp.o: src/layer/zeropadding.cpp \
   /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/pstl/execution_defs.h
 
-CMakeFiles/layer.dir/src/network/model.cpp.o: src/network/model.cpp \
+CMakeFiles/layer.dir/src/model/model.cpp.o: src/model/model.cpp \
   /usr/include/stdc-predef.h \
-  include/network/model.hpp \
+  include/model/model.hpp \
   include/layer/convolution.hpp \
   include/featuremap/featuremap.hpp \
   /usr/include/c++/11/iostream \
@@ -2194,11 +2197,13 @@ CMakeFiles/layer.dir/src/network/model.cpp.o: src/network/model.cpp \
   include/layer/softmax.hpp
 
 
+src/model/model.cpp:
+
 src/layer/zeropadding.cpp:
 
-include/layer/softmax.hpp:
-
 src/layer/softmax.cpp:
+
+src/layer/relu.cpp:
 
 /usr/include/c++/11/bits/basic_string.h:
 
@@ -2274,12 +2279,6 @@ include/layer/zeropadding.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
-/usr/include/c++/11/bits/unordered_map.h:
-
-/usr/include/c++/11/ext/alloc_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
 /usr/include/c++/11/clocale:
 
 /usr/include/c++/11/bits/ostream.tcc:
@@ -2302,10 +2301,6 @@ include/layer/zeropadding.hpp:
 
 /usr/include/c++/11/bits/invoke.h:
 
-/usr/include/c++/11/cstdint:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
 /usr/include/c++/11/tr1/special_function_util.h:
 
 /usr/include/c++/11/debug/debug.h:
@@ -2325,6 +2320,8 @@ include/datahandler/datahandler.hpp:
 /usr/include/c++/11/cmath:
 
 /usr/include/c++/11/bits/allocator.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
@@ -2358,25 +2355,15 @@ include/layer/convolution.hpp:
 
 /usr/include/c++/11/bits/stl_vector.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/c++/11/bits/char_traits.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/c++/11/functional:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/include/c++/11/ext/type_traits.h:
+/usr/include/c++/11/ostream:
 
 /usr/include/c++/11/tr1/gamma.tcc:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/include/c++/11/ostream:
+/usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/include/c++/11/ext/type_traits.h:
 
 /usr/include/c++/11/ext/numeric_traits.h:
 
@@ -2388,11 +2375,39 @@ include/layer/convolution.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
+/usr/include/c++/11/bits/char_traits.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/c++/11/functional:
+
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/usr/include/c++/11/bits/unordered_map.h:
+
+/usr/include/c++/11/ext/alloc_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/c++/11/cstdint:
+
+include/model/model.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+include/layer/maxpooling.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
@@ -2401,10 +2416,6 @@ include/layer/convolution.hpp:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
 /usr/include/c++/11/exception:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/c++/11/string:
 
@@ -2425,10 +2436,6 @@ include/layer/convolution.hpp:
 /usr/include/c++/11/bits/stl_algobase.h:
 
 /usr/include/c++/11/bits/nested_exception.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-include/layer/maxpooling.hpp:
 
 /usr/include/c++/11/bits/std_function.h:
 
@@ -2487,6 +2494,8 @@ include/layer/maxpooling.hpp:
 /usr/include/c++/11/initializer_list:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
+
+include/layer/softmax.hpp:
 
 /usr/include/stdc-predef.h:
 
@@ -2554,8 +2563,6 @@ src/layer/fc.cpp:
 
 /usr/include/c++/11/iostream:
 
-include/network/model.hpp:
-
 /usr/include/c++/11/bits/node_handle.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
@@ -2569,8 +2576,6 @@ include/network/model.hpp:
 /usr/include/c++/11/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/11/stdexcept:
-
-src/layer/relu.cpp:
 
 /usr/include/c++/11/tr1/bessel_function.tcc:
 
@@ -2595,8 +2600,6 @@ src/layer/relu.cpp:
 /usr/include/c++/11/bits/locale_facets.tcc:
 
 /usr/include/c++/11/bits/istream.tcc:
-
-src/network/model.cpp:
 
 /usr/include/c++/11/stdlib.h:
 
@@ -2696,6 +2699,10 @@ src/layer/maxpooling.cpp:
 
 /usr/include/c++/11/bits/vector.tcc:
 
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+include/layer/relu.hpp:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
@@ -2711,7 +2718,3 @@ src/featuremap/featuremap.cpp:
 /usr/include/c++/11/type_traits:
 
 src/layer/convolution.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-include/layer/relu.hpp:

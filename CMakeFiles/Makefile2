@@ -64,7 +64,7 @@ CMAKE_BINARY_DIR = /mnt/c/Users/sammy/Documents/project/mobilenet
 
 # The main recursive "all" target.
 all: CMakeFiles/layer.dir/all
-all: CMakeFiles/network.dir/all
+all: CMakeFiles/model.dir/all
 all: CMakeFiles/test.dir/all
 .PHONY : all
 
@@ -74,7 +74,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/layer.dir/clean
-clean: CMakeFiles/network.dir/clean
+clean: CMakeFiles/model.dir/clean
 clean: CMakeFiles/test.dir/clean
 .PHONY : clean
 
@@ -105,37 +105,37 @@ CMakeFiles/layer.dir/clean:
 .PHONY : CMakeFiles/layer.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/network.dir
+# Target rules for target CMakeFiles/model.dir
 
 # All Build rule for target.
-CMakeFiles/network.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/sammy/Documents/project/mobilenet/CMakeFiles --progress-num=11,12,13,14,15,16,17,18,19,20 "Built target network"
-.PHONY : CMakeFiles/network.dir/all
+CMakeFiles/model.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model.dir/build.make CMakeFiles/model.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model.dir/build.make CMakeFiles/model.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/sammy/Documents/project/mobilenet/CMakeFiles --progress-num=11,12,13,14,15,16,17,18,19,20 "Built target model"
+.PHONY : CMakeFiles/model.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/network.dir/rule: cmake_check_build_system
+CMakeFiles/model.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/sammy/Documents/project/mobilenet/CMakeFiles 10
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/network.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/model.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/sammy/Documents/project/mobilenet/CMakeFiles 0
-.PHONY : CMakeFiles/network.dir/rule
+.PHONY : CMakeFiles/model.dir/rule
 
 # Convenience name for target.
-network: CMakeFiles/network.dir/rule
-.PHONY : network
+model: CMakeFiles/model.dir/rule
+.PHONY : model
 
 # clean rule for target.
-CMakeFiles/network.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/network.dir/build.make CMakeFiles/network.dir/clean
-.PHONY : CMakeFiles/network.dir/clean
+CMakeFiles/model.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model.dir/build.make CMakeFiles/model.dir/clean
+.PHONY : CMakeFiles/model.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/test.dir
 
 # All Build rule for target.
 CMakeFiles/test.dir/all: CMakeFiles/layer.dir/all
-CMakeFiles/test.dir/all: CMakeFiles/network.dir/all
+CMakeFiles/test.dir/all: CMakeFiles/model.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/sammy/Documents/project/mobilenet/CMakeFiles --progress-num=21,22 "Built target test"

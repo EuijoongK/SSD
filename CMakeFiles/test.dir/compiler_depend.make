@@ -3,7 +3,7 @@
 
 CMakeFiles/test.dir/src/test.cpp.o: src/test.cpp \
   /usr/include/stdc-predef.h \
-  include/network/model.hpp \
+  include/model/model.hpp \
   include/layer/convolution.hpp \
   include/featuremap/featuremap.hpp \
   /usr/include/c++/11/iostream \
@@ -245,8 +245,11 @@ CMakeFiles/test.dir/src/test.cpp.o: src/test.cpp \
   /usr/include/c++/11/pstl/execution_defs.h \
   include/layer/maxpooling.hpp \
   include/layer/zeropadding.hpp \
+  include/layer/fc.hpp \
+  include/layer/relu.hpp \
+  include/layer/softmax.hpp \
   include/datahandler/datahandler.hpp \
-  include/network/model.hpp \
+  include/model/model.hpp \
   /usr/include/c++/11/fstream \
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -261,6 +264,8 @@ CMakeFiles/test.dir/src/test.cpp.o: src/test.cpp \
 /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
 
 include/datahandler/datahandler.hpp:
+
+include/layer/relu.hpp:
 
 /usr/include/c++/11/bits/vector.tcc:
 
@@ -416,6 +421,8 @@ include/datahandler/datahandler.hpp:
 
 /usr/include/ctype.h:
 
+include/layer/softmax.hpp:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
 /usr/include/c++/11/initializer_list:
@@ -460,10 +467,6 @@ include/datahandler/datahandler.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
-include/layer/maxpooling.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
 /usr/include/c++/11/bits/nested_exception.h:
 
 /usr/include/c++/11/bits/stl_algobase.h:
@@ -490,25 +493,25 @@ include/layer/maxpooling.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+include/layer/maxpooling.hpp:
 
-/usr/include/x86_64-linux-gnu/asm/errno.h:
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+include/model/model.hpp:
 
-/usr/include/c++/11/ostream:
+/usr/include/c++/11/cstdint:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
+/usr/include/x86_64-linux-gnu/bits/sched.h:
 
-/usr/include/c++/11/bits/ostream_insert.h:
+/usr/include/c++/11/bits/unordered_map.h:
 
-/usr/include/c++/11/bits/stl_vector.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
-/usr/include/c++/11/system_error:
+/usr/include/c++/11/functional:
 
-include/layer/convolution.hpp:
+/usr/include/asm-generic/errno-base.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+/usr/include/c++/11/bits/char_traits.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
@@ -517,6 +520,16 @@ include/layer/convolution.hpp:
 /usr/include/features.h:
 
 /usr/include/c++/11/ext/numeric_traits.h:
+
+/usr/include/c++/11/ext/type_traits.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+
+/usr/include/c++/11/iosfwd:
+
+/usr/include/c++/11/bits/codecvt.h:
+
+/usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/c++/11/bits/node_handle.h:
 
@@ -532,33 +545,25 @@ include/layer/convolution.hpp:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/include/c++/11/ext/type_traits.h:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+/usr/include/c++/11/ostream:
 
-/usr/include/c++/11/iosfwd:
+/usr/include/c++/11/bits/ostream_insert.h:
 
-/usr/include/c++/11/bits/codecvt.h:
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
-/usr/include/x86_64-linux-gnu/bits/time64.h:
+/usr/include/x86_64-linux-gnu/asm/errno.h:
 
-/usr/include/c++/11/functional:
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
-/usr/include/asm-generic/errno-base.h:
+/usr/include/c++/11/bits/stl_vector.h:
 
-/usr/include/c++/11/bits/char_traits.h:
+/usr/include/c++/11/system_error:
 
-include/network/model.hpp:
+include/layer/convolution.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/c++/11/ios:
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 include/featuremap/featuremap.hpp:
 
@@ -573,6 +578,8 @@ include/featuremap/featuremap.hpp:
 /usr/include/c++/11/bits/stl_function.h:
 
 /usr/include/stdc-predef.h:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
@@ -595,6 +602,10 @@ src/test.cpp:
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/c++/11/ios:
 
 /usr/include/c++/11/bits/std_function.h:
 
@@ -650,17 +661,11 @@ src/test.cpp:
 
 /usr/include/c++/11/bits/predefined_ops.h:
 
-/usr/include/c++/11/cstdint:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/c++/11/bits/unordered_map.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
 /usr/include/c++/11/bits/move.h:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+include/layer/fc.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
@@ -707,6 +712,10 @@ include/layer/zeropadding.hpp:
 /usr/include/c++/11/ext/atomicity.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 

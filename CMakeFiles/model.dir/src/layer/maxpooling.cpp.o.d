@@ -1,7 +1,7 @@
-CMakeFiles/network.dir/src/layer/fc.cpp.o: \
- /mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/fc.cpp \
+CMakeFiles/model.dir/src/layer/maxpooling.cpp.o: \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/maxpooling.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/../../include/layer/fc.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/../../include/layer/maxpooling.hpp \
  /mnt/c/Users/sammy/Documents/project/mobilenet/src/layer/../../include/layer/../featuremap/featuremap.hpp \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

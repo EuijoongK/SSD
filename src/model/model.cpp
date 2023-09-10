@@ -16,7 +16,8 @@ Network::Network::Network(const Network& ref){
 
 void Network::Network::add_layer(uint layer_type, const FeatureMap::Kernel& kernel){
     layer_list.push_back(layer_type);
-    kernel_arr[++layer_num] = kernel;
+    *(kernel_arr + layer_num) = kernel;
+    ++layer_num;
 }
 
 void Network::Network::run_model(){

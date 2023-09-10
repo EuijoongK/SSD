@@ -1,1 +1,1 @@
-/usr/bin/c++  -fno-elide-constructors CMakeFiles/test.dir/src/test.cpp.o -o test  build/lib/liblayer.a build/lib/libnetwork.a 
+/usr/bin/c++  -fno-elide-constructors CMakeFiles/test.dir/src/test.cpp.o -o test  build/lib/liblayer.a build/lib/libmodel.a 
