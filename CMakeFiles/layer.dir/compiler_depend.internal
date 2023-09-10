@@ -2198,4 +2198,7 @@ CMakeFiles/layer.dir/src/network/model.cpp.o
  /usr/include/c++/11/pstl/execution_defs.h
  /mnt/c/Users/sammy/Documents/project/mobilenet/include/layer/maxpooling.hpp
  /mnt/c/Users/sammy/Documents/project/mobilenet/include/layer/zeropadding.hpp
+ /mnt/c/Users/sammy/Documents/project/mobilenet/include/layer/fc.hpp
+ /mnt/c/Users/sammy/Documents/project/mobilenet/include/layer/relu.hpp
+ /mnt/c/Users/sammy/Documents/project/mobilenet/include/layer/softmax.hpp
 

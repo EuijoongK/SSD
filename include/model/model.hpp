@@ -5,17 +5,21 @@
 #define MAX_KERNEL_NUM 10000
 
 #define CONV 1
-#define FC 2
-#define MAXPOOLING 3
-#define RELU 4
-#define SOFTMAX 5
-#define ZEROPADDING 6
-#define FLATTEN 7
-#define DROPOUT 8
+#define CONV_WITH_RELU 2
+#define FC 3
+#define MAXPOOLING 4
+#define RELU 5
+#define SOFTMAX 6
+#define ZEROPADDING 7
+#define FLATTEN 8
+#define DROPOUT 9
 
 #include "../layer/convolution.hpp"
 #include "../layer/maxpooling.hpp"
 #include "../layer/zeropadding.hpp"
+#include "../layer/fc.hpp"
+#include "../layer/relu.hpp"
+#include "../layer/softmax.hpp"
 
 #include <vector>
 

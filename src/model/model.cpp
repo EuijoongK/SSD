@@ -1,4 +1,4 @@
-#include "../../include/network/model.hpp"
+#include "../../include/model/model.hpp"
 
 Network::Network::Network(){
     layer_num = 0;

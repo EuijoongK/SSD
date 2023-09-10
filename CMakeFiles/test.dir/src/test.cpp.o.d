@@ -201,6 +201,9 @@ CMakeFiles/test.dir/src/test.cpp.o: \
  /usr/include/c++/11/pstl/execution_defs.h \
  /mnt/c/Users/sammy/Documents/project/mobilenet/include/network/../layer/maxpooling.hpp \
  /mnt/c/Users/sammy/Documents/project/mobilenet/include/network/../layer/zeropadding.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/include/network/../layer/fc.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/include/network/../layer/relu.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/include/network/../layer/softmax.hpp \
  /mnt/c/Users/sammy/Documents/project/mobilenet/include/datahandler/datahandler.hpp \
  /mnt/c/Users/sammy/Documents/project/mobilenet/include/datahandler/../network/model.hpp \
  /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \

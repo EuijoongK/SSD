@@ -202,6 +202,9 @@ CMakeFiles/network.dir/src/datahandler/datahandler.cpp.o: \
  /usr/include/c++/11/pstl/execution_defs.h \
  /mnt/c/Users/sammy/Documents/project/mobilenet/src/datahandler/../../include/datahandler/../network/../layer/maxpooling.hpp \
  /mnt/c/Users/sammy/Documents/project/mobilenet/src/datahandler/../../include/datahandler/../network/../layer/zeropadding.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/datahandler/../../include/datahandler/../network/../layer/fc.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/datahandler/../../include/datahandler/../network/../layer/relu.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/datahandler/../../include/datahandler/../network/../layer/softmax.hpp \
  /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \

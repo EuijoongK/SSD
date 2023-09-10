@@ -20,7 +20,7 @@ set(LIB_SRC
     ${SRC_DIR}/layer/relu.cpp
     ${SRC_DIR}/layer/fc.cpp
     ${SRC_DIR}/layer/softmax.cpp
-    ${SRC_DIR}/network/model.cpp
+    ${SRC_DIR}/model/model.cpp
     ${SRC_DIR}/datahandler/datahandler.cpp
 )
 
@@ -30,8 +30,8 @@ include_directories(include)
 # 정적 라이브러리 빌드
 add_library(layer STATIC ${LIB_SRC})
 set_target_properties(layer PROPERTIES ARCHIVE_OUTPUT_DIRECTORY build/lib)
-add_library(network STATIC ${LIB_SRC})
-set_target_properties(network PROPERTIES ARCHIVE_OUTPUT_DIRECTORY build/lib)
+add_library(model STATIC ${LIB_SRC})
+set_target_properties(model PROPERTIES ARCHIVE_OUTPUT_DIRECTORY build/lib)
 
 # 실행 파일 빌드
 add_executable(test ${SRC_DIR}/test.cpp)

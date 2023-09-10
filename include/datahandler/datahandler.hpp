@@ -1,4 +1,4 @@
-#include "../network/model.hpp"
+#include "../model/model.hpp"
 
 #ifndef DATAHANDLER_H
 #define DATAHANDLER_H
@@ -6,6 +6,15 @@
 #include <fstream>
 
 namespace Datahandler{
+
+    class Datahandler{
+        public:
+            std::string file_format;
+        public:
+            Datahandler(std::string& _file_format);
+            void set_file_format(std::string& _file_format);
+            ~Datahandler();
+    };
 
     void import_model_info(
         const std::string& file_name,
@@ -18,7 +27,6 @@ namespace Datahandler{
         FeatureMap::Kernel* kernel_ptr
     );
 
-    void import_layer();
 }
 
 #endif

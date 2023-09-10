@@ -2188,7 +2188,10 @@ CMakeFiles/layer.dir/src/network/model.cpp.o: src/network/model.cpp \
   /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/pstl/execution_defs.h \
   include/layer/maxpooling.hpp \
-  include/layer/zeropadding.hpp
+  include/layer/zeropadding.hpp \
+  include/layer/fc.hpp \
+  include/layer/relu.hpp \
+  include/layer/softmax.hpp
 
 
 src/layer/zeropadding.cpp:

@@ -200,4 +200,7 @@ CMakeFiles/network.dir/src/network/model.cpp.o: \
  /usr/include/c++/11/bits/vector.tcc \
  /usr/include/c++/11/pstl/execution_defs.h \
  /mnt/c/Users/sammy/Documents/project/mobilenet/src/network/../../include/network/../layer/maxpooling.hpp \
- /mnt/c/Users/sammy/Documents/project/mobilenet/src/network/../../include/network/../layer/zeropadding.hpp
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/network/../../include/network/../layer/zeropadding.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/network/../../include/network/../layer/fc.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/network/../../include/network/../layer/relu.hpp \
+ /mnt/c/Users/sammy/Documents/project/mobilenet/src/network/../../include/network/../layer/softmax.hpp

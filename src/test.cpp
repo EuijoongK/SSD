@@ -1,4 +1,4 @@
-#include "network/model.hpp"
+#include "model/model.hpp"
 #include "datahandler/datahandler.hpp"
 #include <iostream>
 

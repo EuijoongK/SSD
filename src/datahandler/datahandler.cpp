@@ -1,5 +1,17 @@
 #include "../../include/datahandler/datahandler.hpp"
 
+Datahandler::Datahandler::Datahandler(std::string& _file_format){
+    file_format = _file_format;
+}
+
+void Datahandler::Datahandler::set_file_format(std::string& _file_format){
+    file_format = _file_format;
+}
+
+Datahandler::Datahandler::~Datahandler(){
+
+}
+
 namespace Datahandler{
 
     void import_model_info(

@@ -1,5 +1,5 @@
 #ifndef FC_H
-#define FC
+#define FC_H
 
 #include "../featuremap/featuremap.hpp"
 
