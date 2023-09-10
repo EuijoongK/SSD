@@ -8,6 +8,10 @@ void Datahandler::Datahandler::set_file_format(std::string& _file_format){
     file_format = _file_format;
 }
 
+void Datahandler::Datahandler::set_directory(std::string& _file_directory){
+    file_directory = _file_directory;
+}
+
 Datahandler::Datahandler::~Datahandler(){
 
 }
@@ -16,7 +20,7 @@ namespace Datahandler{
 
     void import_model_info(
         const std::string& file_name,
-        Network::Network* model_ptr
+        Model::Model* model_ptr
     ){
         std::ifstream fin;
         fin.open(file_name);
@@ -100,7 +104,7 @@ namespace Datahandler{
 
             kernel_ptr -> weights = (float*)malloc(sizeof(float) * kernel_row * kernel_col 
                 * kernel_channel * kernel_num);
-            kernel_ptr -> bias = (float*)malloc(sizeof(float) * kernel_num);\
+            kernel_ptr -> bias = (float*)malloc(sizeof(float) * kernel_num);
             ++kernel_ptr;
             ++index;
         }
@@ -150,7 +154,7 @@ namespace Datahandler{
         fin_bias.close();
     }
 
-    void import_model(Network::Network* model_ptr){
+    void import_model(Model::Model* model_ptr){
         import_model_info("layer_info.txt", model_ptr);
         auto layer_list = model_ptr -> layer_list;
 

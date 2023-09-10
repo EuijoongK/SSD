@@ -1,11 +1,11 @@
 #include "../../include/model/model.hpp"
 
-Network::Network::Network(){
+Model::Model::Model(){
     layer_num = 0;
     layer_list.clear();
 }
 
-Network::Network::Network(const Network& ref){
+Model::Model::Model(const Model& ref){
     layer_num = ref.layer_num;
     layer_list = ref.layer_list;
     input = ref.input;
@@ -14,13 +14,13 @@ Network::Network::Network(const Network& ref){
     memcpy(featuremap_arr, ref.featuremap_arr, sizeof(FeatureMap::FeatureMap) * MAX_LAYER_NUM);
 }
 
-void Network::Network::add_layer(uint layer_type, const FeatureMap::Kernel& kernel){
+void Model::Model::add_layer(uint layer_type, const FeatureMap::Kernel& kernel){
     layer_list.push_back(layer_type);
     *(kernel_arr + layer_num) = kernel;
     ++layer_num;
 }
 
-void Network::Network::run_model(){
+void Model::Model::run_model(){
     
     FeatureMap::FeatureMap* currnet_featuremap = input;
     FeatureMap::Kernel* current_kernel = kernel_arr;
@@ -48,7 +48,7 @@ void Network::Network::run_model(){
     }
 }
 
-void Network::Network::summary(){
+void Model::Model::summary(){
     uint index = 0;
     FeatureMap::Kernel* kernel_ptr = kernel_arr;
 
@@ -82,6 +82,6 @@ void Network::Network::summary(){
     }
 }
 
-Network::Network::~Network(){
+Model::Model::~Model(){
 
 }

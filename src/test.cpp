@@ -6,7 +6,7 @@ int main() {
     std::string file_directory = "./Keras/";
     std::string file_name = "layer_info.txt";
 
-    Network::Network model;
+    Model::Model model;
     Datahandler::import_model_info(file_directory + file_name, &model);
     model.summary();
 

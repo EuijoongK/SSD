@@ -23,8 +23,8 @@
 
 #include <vector>
 
-namespace Network{
-    class Network{
+namespace Model{
+    class Model{
         public:
             uint layer_num;
             std::vector<uint> layer_list;
@@ -34,14 +34,14 @@ namespace Network{
             FeatureMap::Kernel kernel_arr[MAX_KERNEL_NUM];
 
         public:
-            Network();
-            Network(const Network& ref);
+            Model();
+            Model(const Model& ref);
 
             void add_layer(uint layer_type, const FeatureMap::Kernel& kernel);
             void run_model();
             void summary();
             
-            ~Network();
+            ~Model();
     };
 }
 
