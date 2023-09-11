@@ -12,5 +12,6 @@ int main() {
     dhd.set_file_format(file_format);
 
     dhd.import_model_info_to(&model);
+    
     model.summary();
 }
