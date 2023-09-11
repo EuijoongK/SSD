@@ -78,10 +78,11 @@ void Model::Model::summary(){
             std::cout << "dropout" << std::endl;
         }
         if(layer_type == CONV || layer_type == FC){
-            std::cout << (kernel_ptr + index) -> row << " ";
-            std::cout << (kernel_ptr + index) -> col << " ";
-            std::cout << (kernel_ptr + index) -> channel << " ";
-            std::cout << (kernel_ptr + index) -> num << " ";
+            std::cout << "(";
+            std::cout << (kernel_ptr + index) -> row << ", ";
+            std::cout << (kernel_ptr + index) -> col << ", ";
+            std::cout << (kernel_ptr + index) -> channel << ", ";
+            std::cout << (kernel_ptr + index) -> num << ")";
             std::cout << std::endl;
         }
     }
