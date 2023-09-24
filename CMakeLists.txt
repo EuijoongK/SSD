@@ -12,7 +12,7 @@ set(CMAKE_CXX_FLAGS "${CCFLAGS} -fno-elide-constructors")
 set(SRC_DIR src)
 
 # 라이브러리 소스 파일 목록
-set(LIB_SRC
+set(LAYER_LIB_SRC
     ${SRC_DIR}/featuremap/featuremap.cpp
     ${SRC_DIR}/layer/zeropadding.cpp
     ${SRC_DIR}/layer/maxpooling.cpp
@@ -20,6 +20,10 @@ set(LIB_SRC
     ${SRC_DIR}/layer/relu.cpp
     ${SRC_DIR}/layer/fc.cpp
     ${SRC_DIR}/layer/softmax.cpp
+    ${SRC_DIR}/layer/flatten.cpp
+)
+
+set(LIB_SRC
     ${SRC_DIR}/model/model.cpp
     ${SRC_DIR}/datahandler/datahandler.cpp
 )
@@ -28,9 +32,11 @@ set(LIB_SRC
 include_directories(include)
 
 # 정적 라이브러리 빌드
-add_library(layer STATIC ${LIB_SRC})
+add_library(layer STATIC ${LAYER_LIB_SRC})
 set_target_properties(layer PROPERTIES ARCHIVE_OUTPUT_DIRECTORY build/lib)
+
 add_library(model STATIC ${LIB_SRC})
+target_link_libraries(model layer)
 set_target_properties(model PROPERTIES ARCHIVE_OUTPUT_DIRECTORY build/lib)
 
 # 실행 파일 빌드

@@ -20,6 +20,7 @@
 #include "../layer/fc.hpp"
 #include "../layer/relu.hpp"
 #include "../layer/softmax.hpp"
+#include "../layer/flatten.hpp"
 
 #include <vector>
 

@@ -1,0 +1,5 @@
+/mnt/c/Users/sammy/Documents/project/mobilenet/CMakeFiles/layer.dir
+/mnt/c/Users/sammy/Documents/project/mobilenet/CMakeFiles/model.dir
+/mnt/c/Users/sammy/Documents/project/mobilenet/CMakeFiles/test.dir
+/mnt/c/Users/sammy/Documents/project/mobilenet/CMakeFiles/edit_cache.dir
+/mnt/c/Users/sammy/Documents/project/mobilenet/CMakeFiles/rebuild_cache.dir
