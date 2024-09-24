@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib/libmodel.a CMakeFiles/model.dir/src/model/vgg.c.o
+/usr/bin/ranlib lib/libmodel.a

@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "zeropadd_layer.h": "c",
+        "maxpool_layer.h": "c",
+        "vgg.h": "c",
+        "datahandler.h": "c",
+        "conv_layer.h": "c",
+        "tensor.h": "c"
+    }
+}
