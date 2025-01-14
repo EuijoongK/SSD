@@ -3,13 +3,13 @@
 
 #include "../tensor/tensor.h"
 
-
 struct Tensor* maxpool(
     struct Tensor* input,
-    uint32_t kernel_row,
-    uint32_t kernel_col,
-    uint32_t stride_row,
-    uint32_t stride_col
+    int kernel_row,
+    int kernel_col,
+    int stride_row,
+    int stride_col,
+    int ceil_mode
 );
 
 #endif

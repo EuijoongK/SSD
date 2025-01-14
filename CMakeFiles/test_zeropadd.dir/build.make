@@ -73,15 +73,15 @@ CMakeFiles/test_zeropadd.dir/test/test_zeropadd.c.o: CMakeFiles/test_zeropadd.di
 CMakeFiles/test_zeropadd.dir/test/test_zeropadd.c.o: test/test_zeropadd.c
 CMakeFiles/test_zeropadd.dir/test/test_zeropadd.c.o: CMakeFiles/test_zeropadd.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_zeropadd.dir/test/test_zeropadd.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_zeropadd.dir/test/test_zeropadd.c.o -MF CMakeFiles/test_zeropadd.dir/test/test_zeropadd.c.o.d -o CMakeFiles/test_zeropadd.dir/test/test_zeropadd.c.o -c /mnt/c/Users/MICS/Desktop/proj/SSD/test/test_zeropadd.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_zeropadd.dir/test/test_zeropadd.c.o -MF CMakeFiles/test_zeropadd.dir/test/test_zeropadd.c.o.d -o CMakeFiles/test_zeropadd.dir/test/test_zeropadd.c.o -c /mnt/c/Users/MICS/Desktop/proj/SSD/test/test_zeropadd.c
 
 CMakeFiles/test_zeropadd.dir/test/test_zeropadd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_zeropadd.dir/test/test_zeropadd.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/MICS/Desktop/proj/SSD/test/test_zeropadd.c > CMakeFiles/test_zeropadd.dir/test/test_zeropadd.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/MICS/Desktop/proj/SSD/test/test_zeropadd.c > CMakeFiles/test_zeropadd.dir/test/test_zeropadd.c.i
 
 CMakeFiles/test_zeropadd.dir/test/test_zeropadd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_zeropadd.dir/test/test_zeropadd.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/MICS/Desktop/proj/SSD/test/test_zeropadd.c -o CMakeFiles/test_zeropadd.dir/test/test_zeropadd.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/MICS/Desktop/proj/SSD/test/test_zeropadd.c -o CMakeFiles/test_zeropadd.dir/test/test_zeropadd.c.s
 
 # Object files for target test_zeropadd
 test_zeropadd_OBJECTS = \

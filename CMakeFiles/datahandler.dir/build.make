@@ -73,15 +73,15 @@ CMakeFiles/datahandler.dir/src/datahandler/datahandler.c.o: CMakeFiles/datahandl
 CMakeFiles/datahandler.dir/src/datahandler/datahandler.c.o: src/datahandler/datahandler.c
 CMakeFiles/datahandler.dir/src/datahandler/datahandler.c.o: CMakeFiles/datahandler.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/datahandler.dir/src/datahandler/datahandler.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/datahandler.dir/src/datahandler/datahandler.c.o -MF CMakeFiles/datahandler.dir/src/datahandler/datahandler.c.o.d -o CMakeFiles/datahandler.dir/src/datahandler/datahandler.c.o -c /mnt/c/Users/MICS/Desktop/proj/SSD/src/datahandler/datahandler.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/datahandler.dir/src/datahandler/datahandler.c.o -MF CMakeFiles/datahandler.dir/src/datahandler/datahandler.c.o.d -o CMakeFiles/datahandler.dir/src/datahandler/datahandler.c.o -c /mnt/c/Users/MICS/Desktop/proj/SSD/src/datahandler/datahandler.c
 
 CMakeFiles/datahandler.dir/src/datahandler/datahandler.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/datahandler.dir/src/datahandler/datahandler.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/MICS/Desktop/proj/SSD/src/datahandler/datahandler.c > CMakeFiles/datahandler.dir/src/datahandler/datahandler.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/MICS/Desktop/proj/SSD/src/datahandler/datahandler.c > CMakeFiles/datahandler.dir/src/datahandler/datahandler.c.i
 
 CMakeFiles/datahandler.dir/src/datahandler/datahandler.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/datahandler.dir/src/datahandler/datahandler.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/MICS/Desktop/proj/SSD/src/datahandler/datahandler.c -o CMakeFiles/datahandler.dir/src/datahandler/datahandler.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/MICS/Desktop/proj/SSD/src/datahandler/datahandler.c -o CMakeFiles/datahandler.dir/src/datahandler/datahandler.c.s
 
 # Object files for target datahandler
 datahandler_OBJECTS = \

@@ -73,43 +73,43 @@ CMakeFiles/layer.dir/src/layer/zeropadd_layer.c.o: CMakeFiles/layer.dir/flags.ma
 CMakeFiles/layer.dir/src/layer/zeropadd_layer.c.o: src/layer/zeropadd_layer.c
 CMakeFiles/layer.dir/src/layer/zeropadd_layer.c.o: CMakeFiles/layer.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/layer.dir/src/layer/zeropadd_layer.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/layer.dir/src/layer/zeropadd_layer.c.o -MF CMakeFiles/layer.dir/src/layer/zeropadd_layer.c.o.d -o CMakeFiles/layer.dir/src/layer/zeropadd_layer.c.o -c /mnt/c/Users/MICS/Desktop/proj/SSD/src/layer/zeropadd_layer.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/layer.dir/src/layer/zeropadd_layer.c.o -MF CMakeFiles/layer.dir/src/layer/zeropadd_layer.c.o.d -o CMakeFiles/layer.dir/src/layer/zeropadd_layer.c.o -c /mnt/c/Users/MICS/Desktop/proj/SSD/src/layer/zeropadd_layer.c
 
 CMakeFiles/layer.dir/src/layer/zeropadd_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/layer.dir/src/layer/zeropadd_layer.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/MICS/Desktop/proj/SSD/src/layer/zeropadd_layer.c > CMakeFiles/layer.dir/src/layer/zeropadd_layer.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/MICS/Desktop/proj/SSD/src/layer/zeropadd_layer.c > CMakeFiles/layer.dir/src/layer/zeropadd_layer.c.i
 
 CMakeFiles/layer.dir/src/layer/zeropadd_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/layer.dir/src/layer/zeropadd_layer.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/MICS/Desktop/proj/SSD/src/layer/zeropadd_layer.c -o CMakeFiles/layer.dir/src/layer/zeropadd_layer.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/MICS/Desktop/proj/SSD/src/layer/zeropadd_layer.c -o CMakeFiles/layer.dir/src/layer/zeropadd_layer.c.s
 
 CMakeFiles/layer.dir/src/layer/maxpool_layer.c.o: CMakeFiles/layer.dir/flags.make
 CMakeFiles/layer.dir/src/layer/maxpool_layer.c.o: src/layer/maxpool_layer.c
 CMakeFiles/layer.dir/src/layer/maxpool_layer.c.o: CMakeFiles/layer.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/layer.dir/src/layer/maxpool_layer.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/layer.dir/src/layer/maxpool_layer.c.o -MF CMakeFiles/layer.dir/src/layer/maxpool_layer.c.o.d -o CMakeFiles/layer.dir/src/layer/maxpool_layer.c.o -c /mnt/c/Users/MICS/Desktop/proj/SSD/src/layer/maxpool_layer.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/layer.dir/src/layer/maxpool_layer.c.o -MF CMakeFiles/layer.dir/src/layer/maxpool_layer.c.o.d -o CMakeFiles/layer.dir/src/layer/maxpool_layer.c.o -c /mnt/c/Users/MICS/Desktop/proj/SSD/src/layer/maxpool_layer.c
 
 CMakeFiles/layer.dir/src/layer/maxpool_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/layer.dir/src/layer/maxpool_layer.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/MICS/Desktop/proj/SSD/src/layer/maxpool_layer.c > CMakeFiles/layer.dir/src/layer/maxpool_layer.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/MICS/Desktop/proj/SSD/src/layer/maxpool_layer.c > CMakeFiles/layer.dir/src/layer/maxpool_layer.c.i
 
 CMakeFiles/layer.dir/src/layer/maxpool_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/layer.dir/src/layer/maxpool_layer.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/MICS/Desktop/proj/SSD/src/layer/maxpool_layer.c -o CMakeFiles/layer.dir/src/layer/maxpool_layer.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/MICS/Desktop/proj/SSD/src/layer/maxpool_layer.c -o CMakeFiles/layer.dir/src/layer/maxpool_layer.c.s
 
 CMakeFiles/layer.dir/src/layer/conv_layer.c.o: CMakeFiles/layer.dir/flags.make
 CMakeFiles/layer.dir/src/layer/conv_layer.c.o: src/layer/conv_layer.c
 CMakeFiles/layer.dir/src/layer/conv_layer.c.o: CMakeFiles/layer.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/layer.dir/src/layer/conv_layer.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/layer.dir/src/layer/conv_layer.c.o -MF CMakeFiles/layer.dir/src/layer/conv_layer.c.o.d -o CMakeFiles/layer.dir/src/layer/conv_layer.c.o -c /mnt/c/Users/MICS/Desktop/proj/SSD/src/layer/conv_layer.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/layer.dir/src/layer/conv_layer.c.o -MF CMakeFiles/layer.dir/src/layer/conv_layer.c.o.d -o CMakeFiles/layer.dir/src/layer/conv_layer.c.o -c /mnt/c/Users/MICS/Desktop/proj/SSD/src/layer/conv_layer.c
 
 CMakeFiles/layer.dir/src/layer/conv_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/layer.dir/src/layer/conv_layer.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/MICS/Desktop/proj/SSD/src/layer/conv_layer.c > CMakeFiles/layer.dir/src/layer/conv_layer.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/MICS/Desktop/proj/SSD/src/layer/conv_layer.c > CMakeFiles/layer.dir/src/layer/conv_layer.c.i
 
 CMakeFiles/layer.dir/src/layer/conv_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/layer.dir/src/layer/conv_layer.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/MICS/Desktop/proj/SSD/src/layer/conv_layer.c -o CMakeFiles/layer.dir/src/layer/conv_layer.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/MICS/Desktop/proj/SSD/src/layer/conv_layer.c -o CMakeFiles/layer.dir/src/layer/conv_layer.c.s
 
 # Object files for target layer
 layer_OBJECTS = \

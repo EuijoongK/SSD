@@ -1,4 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/model.dir/src/model/auxiliary.c.o"
+  "CMakeFiles/model.dir/src/model/auxiliary.c.o.d"
+  "CMakeFiles/model.dir/src/model/predict.c.o"
+  "CMakeFiles/model.dir/src/model/predict.c.o.d"
+  "CMakeFiles/model.dir/src/model/ssd.c.o"
+  "CMakeFiles/model.dir/src/model/ssd.c.o.d"
   "CMakeFiles/model.dir/src/model/vgg.c.o"
   "CMakeFiles/model.dir/src/model/vgg.c.o.d"
   "lib/libmodel.a"

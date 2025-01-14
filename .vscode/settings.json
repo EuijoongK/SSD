@@ -5,6 +5,24 @@
         "vgg.h": "c",
         "datahandler.h": "c",
         "conv_layer.h": "c",
-        "tensor.h": "c"
+        "tensor.h": "c",
+        "stdlib.h": "c",
+        "layer.h": "c",
+        "*.tcc": "c",
+        "chrono": "c",
+        "cmath": "c",
+        "condition_variable": "c",
+        "__hash_table": "c",
+        "auxiliary.h": "c",
+        "predict.h": "c",
+        "ssd.h": "c",
+        "math.h": "c",
+        "opencv.hpp": "c",
+        "imgproc_c.h": "c",
+        "mobile.h": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "vector": "c"
     }
 }

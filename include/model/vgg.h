@@ -2,7 +2,7 @@
 #define VGG_H
 
 #include "../datahandler/datahandler.h"
-
+#include "../layer/layer.h"
 
 struct VGGBase{
     // Input dimension : (300, 300, 3)
@@ -72,6 +72,6 @@ void vgg_init(struct VGGBase* vggbase);
 void vgg_load_param(struct VGGBase* vggbase);
 void vgg_destroy(struct VGGBase* vggbase);
 
-struct Tensor* vgg_run(struct VGGBase* vggbase, struct Tensor* input);
+struct Tensor** vgg_run(struct VGGBase* vggbase, struct Tensor* input);
 
 #endif

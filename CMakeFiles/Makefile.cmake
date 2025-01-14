@@ -53,7 +53,10 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/layer.dir/DependInfo.cmake"
   "CMakeFiles/datahandler.dir/DependInfo.cmake"
   "CMakeFiles/model.dir/DependInfo.cmake"
+  "CMakeFiles/test_conv.dir/DependInfo.cmake"
+  "CMakeFiles/test_img.dir/DependInfo.cmake"
   "CMakeFiles/test_maxpool.dir/DependInfo.cmake"
   "CMakeFiles/test_model.dir/DependInfo.cmake"
+  "CMakeFiles/test_param.dir/DependInfo.cmake"
   "CMakeFiles/test_zeropadd.dir/DependInfo.cmake"
   )

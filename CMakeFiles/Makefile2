@@ -67,8 +67,11 @@ all: CMakeFiles/tensor.dir/all
 all: CMakeFiles/layer.dir/all
 all: CMakeFiles/datahandler.dir/all
 all: CMakeFiles/model.dir/all
+all: CMakeFiles/test_conv.dir/all
+all: CMakeFiles/test_img.dir/all
 all: CMakeFiles/test_maxpool.dir/all
 all: CMakeFiles/test_model.dir/all
+all: CMakeFiles/test_param.dir/all
 all: CMakeFiles/test_zeropadd.dir/all
 .PHONY : all
 
@@ -81,8 +84,11 @@ clean: CMakeFiles/tensor.dir/clean
 clean: CMakeFiles/layer.dir/clean
 clean: CMakeFiles/datahandler.dir/clean
 clean: CMakeFiles/model.dir/clean
+clean: CMakeFiles/test_conv.dir/clean
+clean: CMakeFiles/test_img.dir/clean
 clean: CMakeFiles/test_maxpool.dir/clean
 clean: CMakeFiles/test_model.dir/clean
+clean: CMakeFiles/test_param.dir/clean
 clean: CMakeFiles/test_zeropadd.dir/clean
 .PHONY : clean
 
@@ -93,7 +99,7 @@ clean: CMakeFiles/test_zeropadd.dir/clean
 CMakeFiles/tensor.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tensor.dir/build.make CMakeFiles/tensor.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tensor.dir/build.make CMakeFiles/tensor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles --progress-num=9,10 "Built target tensor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles --progress-num=12,13 "Built target tensor"
 .PHONY : CMakeFiles/tensor.dir/all
 
 # Build rule for subdir invocation for target.
@@ -173,12 +179,12 @@ CMakeFiles/model.dir/all: CMakeFiles/layer.dir/all
 CMakeFiles/model.dir/all: CMakeFiles/datahandler.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/model.dir/build.make CMakeFiles/model.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/model.dir/build.make CMakeFiles/model.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles --progress-num=7,8 "Built target model"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles --progress-num=7,8,9,10,11 "Built target model"
 .PHONY : CMakeFiles/model.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/model.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/model.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles 0
 .PHONY : CMakeFiles/model.dir/rule
@@ -193,6 +199,64 @@ CMakeFiles/model.dir/clean:
 .PHONY : CMakeFiles/model.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/test_conv.dir
+
+# All Build rule for target.
+CMakeFiles/test_conv.dir/all: CMakeFiles/tensor.dir/all
+CMakeFiles/test_conv.dir/all: CMakeFiles/layer.dir/all
+CMakeFiles/test_conv.dir/all: CMakeFiles/datahandler.dir/all
+CMakeFiles/test_conv.dir/all: CMakeFiles/model.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_conv.dir/build.make CMakeFiles/test_conv.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_conv.dir/build.make CMakeFiles/test_conv.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles --progress-num=14,15 "Built target test_conv"
+.PHONY : CMakeFiles/test_conv.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_conv.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_conv.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles 0
+.PHONY : CMakeFiles/test_conv.dir/rule
+
+# Convenience name for target.
+test_conv: CMakeFiles/test_conv.dir/rule
+.PHONY : test_conv
+
+# clean rule for target.
+CMakeFiles/test_conv.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_conv.dir/build.make CMakeFiles/test_conv.dir/clean
+.PHONY : CMakeFiles/test_conv.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_img.dir
+
+# All Build rule for target.
+CMakeFiles/test_img.dir/all: CMakeFiles/tensor.dir/all
+CMakeFiles/test_img.dir/all: CMakeFiles/layer.dir/all
+CMakeFiles/test_img.dir/all: CMakeFiles/datahandler.dir/all
+CMakeFiles/test_img.dir/all: CMakeFiles/model.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_img.dir/build.make CMakeFiles/test_img.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_img.dir/build.make CMakeFiles/test_img.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles --progress-num=16,17 "Built target test_img"
+.PHONY : CMakeFiles/test_img.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_img.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_img.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles 0
+.PHONY : CMakeFiles/test_img.dir/rule
+
+# Convenience name for target.
+test_img: CMakeFiles/test_img.dir/rule
+.PHONY : test_img
+
+# clean rule for target.
+CMakeFiles/test_img.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_img.dir/build.make CMakeFiles/test_img.dir/clean
+.PHONY : CMakeFiles/test_img.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/test_maxpool.dir
 
 # All Build rule for target.
@@ -202,12 +266,12 @@ CMakeFiles/test_maxpool.dir/all: CMakeFiles/datahandler.dir/all
 CMakeFiles/test_maxpool.dir/all: CMakeFiles/model.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_maxpool.dir/build.make CMakeFiles/test_maxpool.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_maxpool.dir/build.make CMakeFiles/test_maxpool.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles --progress-num=11,12 "Built target test_maxpool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles --progress-num=18,19 "Built target test_maxpool"
 .PHONY : CMakeFiles/test_maxpool.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_maxpool.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_maxpool.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles 0
 .PHONY : CMakeFiles/test_maxpool.dir/rule
@@ -231,12 +295,12 @@ CMakeFiles/test_model.dir/all: CMakeFiles/datahandler.dir/all
 CMakeFiles/test_model.dir/all: CMakeFiles/model.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_model.dir/build.make CMakeFiles/test_model.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_model.dir/build.make CMakeFiles/test_model.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles --progress-num=13,14 "Built target test_model"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles --progress-num=20,21 "Built target test_model"
 .PHONY : CMakeFiles/test_model.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_model.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_model.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles 0
 .PHONY : CMakeFiles/test_model.dir/rule
@@ -251,6 +315,35 @@ CMakeFiles/test_model.dir/clean:
 .PHONY : CMakeFiles/test_model.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/test_param.dir
+
+# All Build rule for target.
+CMakeFiles/test_param.dir/all: CMakeFiles/tensor.dir/all
+CMakeFiles/test_param.dir/all: CMakeFiles/layer.dir/all
+CMakeFiles/test_param.dir/all: CMakeFiles/datahandler.dir/all
+CMakeFiles/test_param.dir/all: CMakeFiles/model.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_param.dir/build.make CMakeFiles/test_param.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_param.dir/build.make CMakeFiles/test_param.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles --progress-num=22,23 "Built target test_param"
+.PHONY : CMakeFiles/test_param.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_param.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_param.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles 0
+.PHONY : CMakeFiles/test_param.dir/rule
+
+# Convenience name for target.
+test_param: CMakeFiles/test_param.dir/rule
+.PHONY : test_param
+
+# clean rule for target.
+CMakeFiles/test_param.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_param.dir/build.make CMakeFiles/test_param.dir/clean
+.PHONY : CMakeFiles/test_param.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/test_zeropadd.dir
 
 # All Build rule for target.
@@ -260,12 +353,12 @@ CMakeFiles/test_zeropadd.dir/all: CMakeFiles/datahandler.dir/all
 CMakeFiles/test_zeropadd.dir/all: CMakeFiles/model.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_zeropadd.dir/build.make CMakeFiles/test_zeropadd.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_zeropadd.dir/build.make CMakeFiles/test_zeropadd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles --progress-num=15,16 "Built target test_zeropadd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles --progress-num=24,25 "Built target test_zeropadd"
 .PHONY : CMakeFiles/test_zeropadd.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_zeropadd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_zeropadd.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles 0
 .PHONY : CMakeFiles/test_zeropadd.dir/rule

@@ -169,6 +169,32 @@ model/fast:
 .PHONY : model/fast
 
 #=============================================================================
+# Target rules for targets named test_conv
+
+# Build rule for target.
+test_conv: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_conv
+.PHONY : test_conv
+
+# fast build rule for target.
+test_conv/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_conv.dir/build.make CMakeFiles/test_conv.dir/build
+.PHONY : test_conv/fast
+
+#=============================================================================
+# Target rules for targets named test_img
+
+# Build rule for target.
+test_img: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_img
+.PHONY : test_img
+
+# fast build rule for target.
+test_img/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_img.dir/build.make CMakeFiles/test_img.dir/build
+.PHONY : test_img/fast
+
+#=============================================================================
 # Target rules for targets named test_maxpool
 
 # Build rule for target.
@@ -193,6 +219,19 @@ test_model: cmake_check_build_system
 test_model/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_model.dir/build.make CMakeFiles/test_model.dir/build
 .PHONY : test_model/fast
+
+#=============================================================================
+# Target rules for targets named test_param
+
+# Build rule for target.
+test_param: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_param
+.PHONY : test_param
+
+# fast build rule for target.
+test_param/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_param.dir/build.make CMakeFiles/test_param.dir/build
+.PHONY : test_param/fast
 
 #=============================================================================
 # Target rules for targets named test_zeropadd
@@ -303,6 +342,78 @@ src/layer/zeropadd_layer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer.dir/build.make CMakeFiles/layer.dir/src/layer/zeropadd_layer.c.s
 .PHONY : src/layer/zeropadd_layer.c.s
 
+src/model/auxiliary.o: src/model/auxiliary.c.o
+.PHONY : src/model/auxiliary.o
+
+# target to build an object file
+src/model/auxiliary.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model.dir/build.make CMakeFiles/model.dir/src/model/auxiliary.c.o
+.PHONY : src/model/auxiliary.c.o
+
+src/model/auxiliary.i: src/model/auxiliary.c.i
+.PHONY : src/model/auxiliary.i
+
+# target to preprocess a source file
+src/model/auxiliary.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model.dir/build.make CMakeFiles/model.dir/src/model/auxiliary.c.i
+.PHONY : src/model/auxiliary.c.i
+
+src/model/auxiliary.s: src/model/auxiliary.c.s
+.PHONY : src/model/auxiliary.s
+
+# target to generate assembly for a file
+src/model/auxiliary.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model.dir/build.make CMakeFiles/model.dir/src/model/auxiliary.c.s
+.PHONY : src/model/auxiliary.c.s
+
+src/model/predict.o: src/model/predict.c.o
+.PHONY : src/model/predict.o
+
+# target to build an object file
+src/model/predict.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model.dir/build.make CMakeFiles/model.dir/src/model/predict.c.o
+.PHONY : src/model/predict.c.o
+
+src/model/predict.i: src/model/predict.c.i
+.PHONY : src/model/predict.i
+
+# target to preprocess a source file
+src/model/predict.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model.dir/build.make CMakeFiles/model.dir/src/model/predict.c.i
+.PHONY : src/model/predict.c.i
+
+src/model/predict.s: src/model/predict.c.s
+.PHONY : src/model/predict.s
+
+# target to generate assembly for a file
+src/model/predict.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model.dir/build.make CMakeFiles/model.dir/src/model/predict.c.s
+.PHONY : src/model/predict.c.s
+
+src/model/ssd.o: src/model/ssd.c.o
+.PHONY : src/model/ssd.o
+
+# target to build an object file
+src/model/ssd.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model.dir/build.make CMakeFiles/model.dir/src/model/ssd.c.o
+.PHONY : src/model/ssd.c.o
+
+src/model/ssd.i: src/model/ssd.c.i
+.PHONY : src/model/ssd.i
+
+# target to preprocess a source file
+src/model/ssd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model.dir/build.make CMakeFiles/model.dir/src/model/ssd.c.i
+.PHONY : src/model/ssd.c.i
+
+src/model/ssd.s: src/model/ssd.c.s
+.PHONY : src/model/ssd.s
+
+# target to generate assembly for a file
+src/model/ssd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model.dir/build.make CMakeFiles/model.dir/src/model/ssd.c.s
+.PHONY : src/model/ssd.c.s
+
 src/model/vgg.o: src/model/vgg.c.o
 .PHONY : src/model/vgg.o
 
@@ -350,6 +461,54 @@ src/tensor/tensor.s: src/tensor/tensor.c.s
 src/tensor/tensor.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tensor.dir/build.make CMakeFiles/tensor.dir/src/tensor/tensor.c.s
 .PHONY : src/tensor/tensor.c.s
+
+test/test_conv.o: test/test_conv.c.o
+.PHONY : test/test_conv.o
+
+# target to build an object file
+test/test_conv.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_conv.dir/build.make CMakeFiles/test_conv.dir/test/test_conv.c.o
+.PHONY : test/test_conv.c.o
+
+test/test_conv.i: test/test_conv.c.i
+.PHONY : test/test_conv.i
+
+# target to preprocess a source file
+test/test_conv.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_conv.dir/build.make CMakeFiles/test_conv.dir/test/test_conv.c.i
+.PHONY : test/test_conv.c.i
+
+test/test_conv.s: test/test_conv.c.s
+.PHONY : test/test_conv.s
+
+# target to generate assembly for a file
+test/test_conv.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_conv.dir/build.make CMakeFiles/test_conv.dir/test/test_conv.c.s
+.PHONY : test/test_conv.c.s
+
+test/test_img.o: test/test_img.c.o
+.PHONY : test/test_img.o
+
+# target to build an object file
+test/test_img.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_img.dir/build.make CMakeFiles/test_img.dir/test/test_img.c.o
+.PHONY : test/test_img.c.o
+
+test/test_img.i: test/test_img.c.i
+.PHONY : test/test_img.i
+
+# target to preprocess a source file
+test/test_img.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_img.dir/build.make CMakeFiles/test_img.dir/test/test_img.c.i
+.PHONY : test/test_img.c.i
+
+test/test_img.s: test/test_img.c.s
+.PHONY : test/test_img.s
+
+# target to generate assembly for a file
+test/test_img.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_img.dir/build.make CMakeFiles/test_img.dir/test/test_img.c.s
+.PHONY : test/test_img.c.s
 
 test/test_maxpool.o: test/test_maxpool.c.o
 .PHONY : test/test_maxpool.o
@@ -399,6 +558,30 @@ test/test_model.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_model.dir/build.make CMakeFiles/test_model.dir/test/test_model.c.s
 .PHONY : test/test_model.c.s
 
+test/test_param.o: test/test_param.c.o
+.PHONY : test/test_param.o
+
+# target to build an object file
+test/test_param.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_param.dir/build.make CMakeFiles/test_param.dir/test/test_param.c.o
+.PHONY : test/test_param.c.o
+
+test/test_param.i: test/test_param.c.i
+.PHONY : test/test_param.i
+
+# target to preprocess a source file
+test/test_param.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_param.dir/build.make CMakeFiles/test_param.dir/test/test_param.c.i
+.PHONY : test/test_param.c.i
+
+test/test_param.s: test/test_param.c.s
+.PHONY : test/test_param.s
+
+# target to generate assembly for a file
+test/test_param.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_param.dir/build.make CMakeFiles/test_param.dir/test/test_param.c.s
+.PHONY : test/test_param.c.s
+
 test/test_zeropadd.o: test/test_zeropadd.c.o
 .PHONY : test/test_zeropadd.o
 
@@ -435,8 +618,11 @@ help:
 	@echo "... layer"
 	@echo "... model"
 	@echo "... tensor"
+	@echo "... test_conv"
+	@echo "... test_img"
 	@echo "... test_maxpool"
 	@echo "... test_model"
+	@echo "... test_param"
 	@echo "... test_zeropadd"
 	@echo "... src/datahandler/datahandler.o"
 	@echo "... src/datahandler/datahandler.i"
@@ -450,18 +636,36 @@ help:
 	@echo "... src/layer/zeropadd_layer.o"
 	@echo "... src/layer/zeropadd_layer.i"
 	@echo "... src/layer/zeropadd_layer.s"
+	@echo "... src/model/auxiliary.o"
+	@echo "... src/model/auxiliary.i"
+	@echo "... src/model/auxiliary.s"
+	@echo "... src/model/predict.o"
+	@echo "... src/model/predict.i"
+	@echo "... src/model/predict.s"
+	@echo "... src/model/ssd.o"
+	@echo "... src/model/ssd.i"
+	@echo "... src/model/ssd.s"
 	@echo "... src/model/vgg.o"
 	@echo "... src/model/vgg.i"
 	@echo "... src/model/vgg.s"
 	@echo "... src/tensor/tensor.o"
 	@echo "... src/tensor/tensor.i"
 	@echo "... src/tensor/tensor.s"
+	@echo "... test/test_conv.o"
+	@echo "... test/test_conv.i"
+	@echo "... test/test_conv.s"
+	@echo "... test/test_img.o"
+	@echo "... test/test_img.i"
+	@echo "... test/test_img.s"
 	@echo "... test/test_maxpool.o"
 	@echo "... test/test_maxpool.i"
 	@echo "... test/test_maxpool.s"
 	@echo "... test/test_model.o"
 	@echo "... test/test_model.i"
 	@echo "... test/test_model.s"
+	@echo "... test/test_param.o"
+	@echo "... test/test_param.i"
+	@echo "... test/test_param.s"
 	@echo "... test/test_zeropadd.o"
 	@echo "... test/test_zeropadd.i"
 	@echo "... test/test_zeropadd.s"

@@ -1,0 +1,11 @@
+2007_000480.jpg
+height  : 375
+width   : 500
+channel : 3
+
+2007_000480.bin
+height  : 300
+width   : 300
+channel : 3
+
+data order : BHWC

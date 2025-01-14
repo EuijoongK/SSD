@@ -1,35 +1,23 @@
-#include "../include/layer/zeropadd_layer.h"
+// #include "../include/layer/zeropadd_layer.h"
+#include "../include/model/vgg.h"
 
 int main(){
-    float data[] = {1, 5, 2, 6, 3, 7, 4, 8};
-    struct Tensor t;
-    t.row = 2;
-    t.col = 2;
-    t.channel = 2;
-    t.data = data;
-
-    struct Tensor* output = zeropadd(&t, 2);
-
-    int row = output -> row;
-    int col = output -> col;
-    int channel = output -> channel;
-
-    printf("New row : %d\n", row);
-    printf("New col : %d\n", col);
+        printf("Load input data...\n");
+    char* input_path = "./data/2007_000480.bin";
+    int in_row = 300;
+    int in_col = 300;
+    int in_channel = 3;
+    struct Tensor* input = image_from_bin(input_path, in_row, in_col, in_channel);
 
     printf("Zeropadding...\n");
-    for(int i = 0; i < row; ++i){
-        for(int j = 0; j < col; ++j){
-            for(int k = 0; k < channel; ++k){
-                printf("%f\t", output -> data[i * col * channel + j * channel + k]);
-            }
-            printf("\n");
-        }
-        printf("\n");
-    }
+    struct Tensor* output = zeropadd(input, 5);
 
+    printf("Saving output...\n");
+    char* output_file = "./output/zeropadd_test.bin";
+    FILE* fp = fopen(output_file, "wb");
+    fwrite(output -> data, sizeof(float), (output -> row) * (output -> col) * (output -> channel), fp);
+    fclose(fp);
+
+    printf("Destroying tensor...\n");
     destroy_tensor(output);
-
-    printf("sizeof int : %d\n", sizeof(int));
-    printf("%ld\n", sizeof(float) * (1 << 31));
-}
+}                                           // verified 241225

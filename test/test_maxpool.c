@@ -1,37 +1,29 @@
-#include "../include/layer/maxpool_layer.h"
+// #include "../include/layer/maxpool_layer.h"                      // compile error, not debugged yet
+#include "../include/model/vgg.h"
 
 int main(){
-    float data[27];
-    struct Tensor t;
-    t.row = 3;
-    t.col = 3;
-    t.channel = 3;
+    printf("Load input data...\n");
+    char* input_path = "./data/2007_000480.bin";
+    int in_row = 300;
+    int in_col = 300;
+    int in_channel = 3;
+    struct Tensor* input = image_from_bin(input_path, in_row, in_col, in_channel);
+
+    printf("Maxpooling...\n");
+    struct Tensor* output = maxpool(input, 3, 3, 2, 2, 0);
+
+    printf("Saving output...\n");
+    char* output_file = "./output/maxpool_test.bin";
+    FILE* fp = fopen(output_file, "wb");
+    fwrite(output -> data, sizeof(float), (output -> row) * (output -> col) * (output -> channel), fp);
+    fclose(fp);
+
+    printf("Row     : %d\n", output -> row);
+    printf("Col     : %d\n", output -> col);
+    printf("Channel : %d\n", output -> channel);
     
-    for(int i = 0; i < t.row; ++i){
-        for(int j = 0; j < t.col; ++j){
-            for(int k = 0; k < t.channel; ++k){
-                data[i * t.col * t.channel + j * t.channel + k] = 3 * i + j + k * 9;
-                printf("%f\t", data[i * t.col * t.channel + j * t.channel + k]);
-            }
-            printf("\n");
-        }
-        printf("\n");
-    }
-
-    t.data = data;
-
-    printf("=============================\n");
-    printf("Maxpool Result\n");
-    struct Tensor* output = maxpool(&t, 2, 2, 1, 1);
-    for(int i = 0; i < output -> row; ++i){
-        for(int j = 0; j < output -> col; ++j){
-            for(int k = 0; k < output -> channel; ++k){
-                printf("%f\t", output -> data[i * output -> col * output -> channel + j * output -> channel + k]);
-            }
-            printf("\n");
-        }
-        printf("\n");
-    }
-
+    printf("Destroying tensor...\n");
     destroy_tensor(output);
 }
+
+// verified 241225, compared maxpool result of C and python, np.allclose successful

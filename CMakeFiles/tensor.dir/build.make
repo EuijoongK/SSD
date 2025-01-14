@@ -73,15 +73,15 @@ CMakeFiles/tensor.dir/src/tensor/tensor.c.o: CMakeFiles/tensor.dir/flags.make
 CMakeFiles/tensor.dir/src/tensor/tensor.c.o: src/tensor/tensor.c
 CMakeFiles/tensor.dir/src/tensor/tensor.c.o: CMakeFiles/tensor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/tensor.dir/src/tensor/tensor.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tensor.dir/src/tensor/tensor.c.o -MF CMakeFiles/tensor.dir/src/tensor/tensor.c.o.d -o CMakeFiles/tensor.dir/src/tensor/tensor.c.o -c /mnt/c/Users/MICS/Desktop/proj/SSD/src/tensor/tensor.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tensor.dir/src/tensor/tensor.c.o -MF CMakeFiles/tensor.dir/src/tensor/tensor.c.o.d -o CMakeFiles/tensor.dir/src/tensor/tensor.c.o -c /mnt/c/Users/MICS/Desktop/proj/SSD/src/tensor/tensor.c
 
 CMakeFiles/tensor.dir/src/tensor/tensor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tensor.dir/src/tensor/tensor.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/MICS/Desktop/proj/SSD/src/tensor/tensor.c > CMakeFiles/tensor.dir/src/tensor/tensor.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/MICS/Desktop/proj/SSD/src/tensor/tensor.c > CMakeFiles/tensor.dir/src/tensor/tensor.c.i
 
 CMakeFiles/tensor.dir/src/tensor/tensor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tensor.dir/src/tensor/tensor.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/MICS/Desktop/proj/SSD/src/tensor/tensor.c -o CMakeFiles/tensor.dir/src/tensor/tensor.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/MICS/Desktop/proj/SSD/src/tensor/tensor.c -o CMakeFiles/tensor.dir/src/tensor/tensor.c.s
 
 # Object files for target tensor
 tensor_OBJECTS = \

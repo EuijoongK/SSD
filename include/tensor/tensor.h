@@ -5,19 +5,19 @@
 #include <string.h>
 #include <stdint.h>
 #include <stdlib.h>
-
+#include <math.h>
 #include <assert.h>
 
 struct Tensor{
-    uint32_t row;
-    uint32_t col;
-    uint32_t channel;
+    int row;
+    int col;
+    int channel;
     float* data;
 };
 
-struct Tensor* create_tensor(float* data, uint32_t batch, uint32_t channel, uint32_t row, uint32_t col);
-void import_tensor(char* path, struct Tensor* t);
-void export_tensor(char* path, struct Tensor* t);
+struct Tensor* create_tensor(float* data, int batch, int channel, int row, int col);
+// void import_tensor(char* path, struct Tensor* t);
+// void export_tensor(char* path, struct Tensor* t);
 void destroy_tensor(struct Tensor* t);
 
 #endif

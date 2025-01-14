@@ -1,2 +1,2 @@
-/usr/bin/ar qc lib/libmodel.a CMakeFiles/model.dir/src/model/vgg.c.o
+/usr/bin/ar qc lib/libmodel.a CMakeFiles/model.dir/src/model/vgg.c.o CMakeFiles/model.dir/src/model/auxiliary.c.o CMakeFiles/model.dir/src/model/predict.c.o CMakeFiles/model.dir/src/model/ssd.c.o
 /usr/bin/ranlib lib/libmodel.a

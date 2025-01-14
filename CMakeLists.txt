@@ -1,8 +1,17 @@
-set(CMAKE_C_COMPILER gcc)
+set(CMAKE_CXX_COMPILER gcc-11)
 project(SSD)
 cmake_minimum_required(VERSION 3.22)
+set(CMAKE_BUILD_TYPE RELEASE)
 
 find_package(OpenCV REQUIRED)
+
+# add_compile_options(
+#     # -ffloat-store
+#     # -frounding-math          
+#     # -fsignaling-nans   
+#     # -fno-unsafe-math-optimizations 
+#     # -fno-associative-math
+# )
 
 set(SRC_DIR src)
 
@@ -18,6 +27,9 @@ set(LAYER_LIB_SRC
 
 set(MODEL_LIB_SRC
     ${SRC_DIR}/model/vgg.c
+    ${SRC_DIR}/model/auxiliary.c
+    ${SRC_DIR}/model/predict.c
+    ${SRC_DIR}/model/ssd.c
 )
 
 set(DATAHANDLER_LIB_SRC
@@ -39,7 +51,7 @@ target_link_libraries(datahandler tensor)
 set_target_properties(datahandler PROPERTIES ARCHIVE_OUTPUT_DIRECTORY lib)
 
 add_library(model STATIC ${MODEL_LIB_SRC})
-target_link_libraries(model layer tensor datahandler)
+target_link_libraries(model layer tensor datahandler m)
 set_target_properties(model PROPERTIES ARCHIVE_OUTPUT_DIRECTORY lib)
 
 file(GLOB TEST_SOURCES "test/*.c")

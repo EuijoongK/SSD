@@ -3,5 +3,8 @@
 
 #include "../tensor/tensor.h"
 
+// struct Tensor* relu(
+//     struct Tensor* input,
+// );
 
 #endif

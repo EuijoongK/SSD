@@ -8,6 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/mnt/c/Users/MICS/Desktop/proj/SSD/src/model/auxiliary.c" "CMakeFiles/model.dir/src/model/auxiliary.c.o" "gcc" "CMakeFiles/model.dir/src/model/auxiliary.c.o.d"
+  "/mnt/c/Users/MICS/Desktop/proj/SSD/src/model/predict.c" "CMakeFiles/model.dir/src/model/predict.c.o" "gcc" "CMakeFiles/model.dir/src/model/predict.c.o.d"
+  "/mnt/c/Users/MICS/Desktop/proj/SSD/src/model/ssd.c" "CMakeFiles/model.dir/src/model/ssd.c.o" "gcc" "CMakeFiles/model.dir/src/model/ssd.c.o.d"
   "/mnt/c/Users/MICS/Desktop/proj/SSD/src/model/vgg.c" "CMakeFiles/model.dir/src/model/vgg.c.o" "gcc" "CMakeFiles/model.dir/src/model/vgg.c.o.d"
   )
 

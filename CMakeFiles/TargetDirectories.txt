@@ -2,8 +2,11 @@
 /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles/layer.dir
 /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles/datahandler.dir
 /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles/model.dir
+/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles/test_conv.dir
+/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles/test_img.dir
 /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles/test_maxpool.dir
 /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles/test_model.dir
+/mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles/test_param.dir
 /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles/test_zeropadd.dir
 /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles/edit_cache.dir
 /mnt/c/Users/MICS/Desktop/proj/SSD/CMakeFiles/rebuild_cache.dir
